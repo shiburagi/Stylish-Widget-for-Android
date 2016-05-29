@@ -91,7 +91,7 @@ app:boxBackground="@color/colorSuccess"
 app:message="@string/helloworld" />
 ```
 
-for the **MessageBox**, there are several **new decalre-styleable** need to **highlight**,
+for the **MessageBox**, there are several **new declare-styleable** need to **highlight**,
 * app:boxBackground - to set background color, only color allow.
 * app:message - to set display text.
 * app:textStyle - to set textView style, (normal, bold, italic).
