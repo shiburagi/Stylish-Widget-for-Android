@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button" parent="Base.Widget.AppCompat.Button">
+        <item name="android:padding">20px</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:drawablePadding">20px</item>
+    </style>
+
+    <style name="Button.Inverse" parent="Button">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="Button.Default" parent="Button">
+        <item name="android:background">@drawable/selector_button_default</item>
+    </style>
+
+    <style name="Button.Primary" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_primary</item>
+
+    </style>
+
+    <style name="Button.Success" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_success</item>
+    </style>
+
+    <style name="Button.Info" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_info</item>
+    </style>
+
+    <style name="Button.Warning" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_warning</item>
+    </style>
+
+    <style name="Button.Danger" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_danger</item>
+    </style>
+
+    <style name="Button.Accent" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_accent</item>
+    </style>
+
+    <style name="Button.Outline" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_outline</item>
+        <item name="android:textColor">@drawable/selector_text_outline</item>
+    </style>
+
+</resources>
+ 

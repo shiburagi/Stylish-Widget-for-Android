@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.infideap.mystylishexample.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.app.infideap.stylishwidget.view.MessageBox
+        android:id="@+id/message_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackground="@color/colorSuccess"
+        app:message="@string/helloworld" />
+
+    <com.app.infideap.stylishwidget.view.MessageBox
+        android:id="@+id/message_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackground="@color/colorWarning"
+        app:message="@string/warning" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <com.app.infideap.stylishwidget.view.AEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/editextexample" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexample"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexamplebold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexampleitalic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="italic" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.app.infideap.stylishwidget.view.ACheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxexample"/>
+            <com.app.infideap.stylishwidget.view.ARadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiobuttonexample"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+           <include layout="@layout/layout_button" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
