@@ -1,4 +1,4 @@
-# RESTLibrary
+# StylishWidget
 This library I use in my previous and current android project and may got an issue and error. 
 I will keep improve this library until it stable and useful.
 
