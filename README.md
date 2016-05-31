@@ -11,13 +11,13 @@ I will keep improve this library until it stable and useful.
 Android 7.0+ support
 
 ## Download
- * **JAR** : (https://drive.google.com/file/d/0Bw_drx3o3plaVjZaM0VCS3RFMG8/view?usp=sharing)
+ * **JAR** : (https://github.com/shiburagi/Stylish-Widget/blob/master/stylishwidget/libs/stylishwidget1.0.jar?raw=true)
  * **APK** : (https://drive.google.com/file/d/0Bw_drx3o3plaZVptWWNxWUdfSmM/view?usp=sharing) 
 
 ## Including In Your Project
 This library is presented as a `.jar` file which you can include in the `libs/`
 folder of your application. You can download the latest version from the
-[google drive](https://drive.google.com/file/d/0Bw_drx3o3plaVjZaM0VCS3RFMG8/view?usp=sharing).
+[github repo](https://github.com/shiburagi/Stylish-Widget/blob/master/stylishwidget/libs/stylishwidget1.0.jar?raw=true).
 
 **or**,
 you can include it by **download this project** and **import /stylishwidget** as **module**.
