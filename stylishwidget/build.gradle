@@ -34,7 +34,7 @@ task makeJar(type: Copy) {
     from('build/intermediates/bundles/release/')
     into('libs/')
     include('classes.jar')
-    rename ('classes.jar', 'myCompiledLibrary.jar')
+    rename ('classes.jar', 'stylishwidget1.0.jar')
 }
 
 makeJar.dependsOn(clearJar, build)

@@ -27,6 +27,9 @@ public class Stylish {
         instance = new Stylish();
     }
 
+    private Stylish(){
+    }
+
     public void set(String regular, String bold, String italic) {
         FONT_REGULAR = regular;
         FONT_BOLD = bold;
