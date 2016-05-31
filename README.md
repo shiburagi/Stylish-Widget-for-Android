@@ -35,6 +35,21 @@ Stylish.getInstance().set(
                 fontFolder.concat("Rajdhani-Bold.ttf"),
                 fontFolder.concat("Rajdhani-Light.ttf"));
 ```
+**or**
+``` java
+// parameter : Normal Font
+Stylish.getInstance().setFontRegular(
+                fontFolder.concat("Rajdhani-Regular.ttf")
+);
+// parameter : Bold Font
+Stylish.getInstance().setFontRegular(
+                fontFolder.concat("Rajdhani-Bold.ttf")
+);
+// parameter : Italic Font
+Stylish.getInstance().setFontRegular(
+                fontFolder.concat("Rajdhani-Light.ttf"))
+);
+```
 
 to **use the widget**, is **same** like using **android widget**
 
