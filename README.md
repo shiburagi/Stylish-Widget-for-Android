@@ -42,11 +42,11 @@ Stylish.getInstance().setFontRegular(
                 fontFolder.concat("Rajdhani-Regular.ttf")
 );
 // parameter : Bold Font
-Stylish.getInstance().setFontRegular(
+Stylish.getInstance().setFontBold(
                 fontFolder.concat("Rajdhani-Bold.ttf")
 );
 // parameter : Italic Font
-Stylish.getInstance().setFontRegular(
+Stylish.getInstance().setFontItalic(
                 fontFolder.concat("Rajdhani-Light.ttf"))
 );
 ```
