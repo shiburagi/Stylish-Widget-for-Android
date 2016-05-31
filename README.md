@@ -26,7 +26,7 @@ you can include it by **download this project** and **import /stylishwidget** as
 
 ## Usage
 
-**NOTE:**　**Initialize** this line of code at the **top of onCreate() in main activity**, or at the **onCreate() of Custom** Application.
+**NOTE:** If you want to use **third-party font**, must **initialize** this line of code at the **top of onCreate() in main activity**, or at the **onCreate() of Custom** Application.
 
 ``` java
 // parameter : Normal Font, Bold Font and Italic Font
