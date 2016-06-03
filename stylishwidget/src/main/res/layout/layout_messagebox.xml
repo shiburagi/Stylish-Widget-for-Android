@@ -29,7 +29,7 @@
             android:visibility="gone"
             android:layout_marginRight="6dp"
             android:id="@+id/button_action"
-            style="@style/Button.Outline"
+            style="@style/Button.Default.Outline"
             android:text="action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
+
+    <com.app.infideap.stylishwidget.view.ATextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plainbuttonsample"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
 
     <com.app.infideap.stylishwidget.view.AButton
         android:layout_width="match_parent"

@@ -86,17 +86,42 @@
             <com.app.infideap.stylishwidget.view.ACheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/checkboxexample"/>
+                android:text="@string/checkboxexample" />
+
             <com.app.infideap.stylishwidget.view.ARadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radiobuttonexample"/>
+                android:text="@string/radiobuttonexample" />
 
             <android.support.v4.widget.Space
                 android:layout_width="wrap_content"
                 android:layout_height="20dp" />
 
-           <include layout="@layout/layout_button" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <include layout="@layout/layout_button_plain" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <include layout="@layout/layout_button_outline" />
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>

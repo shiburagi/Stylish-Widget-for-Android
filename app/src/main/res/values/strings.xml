@@ -10,4 +10,6 @@
     <string name="radiobuttonexample">RadioButton Example</string>
     <string name="textviewexamplebold">TextView Example (Bold)</string>
     <string name="textviewexampleitalic">TextView Example (Italic)</string>
+    <string name="plainbuttonsample">Plain Button Sample</string>
+    <string name="outlinebuttonsample">Outline Button Sample</string>
 </resources>

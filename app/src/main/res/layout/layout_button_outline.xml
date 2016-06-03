@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.app.infideap.stylishwidget.view.ATextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/outlinebuttonsample"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.app.infideap.stylishwidget.view.AButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default Android" />
+
+    <com.app.infideap.stylishwidget.view.AButton
+        style="@style/Button.Default.Outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default" />
+
+    <com.app.infideap.stylishwidget.view.AButton
+        style="@style/Button.Primary.Outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primary" />
+
+    <com.app.infideap.stylishwidget.view.AButton
+        style="@style/Button.Accent.Outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accent" />
+
+    <com.app.infideap.stylishwidget.view.AButton
+        style="@style/Button.Success.Outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Success" />
+
+
+    <com.app.infideap.stylishwidget.view.AButton
+        style="@style/Button.Info.Outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info" />
+
+
+    <com.app.infideap.stylishwidget.view.AButton
+        style="@style/Button.Warning.Outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Warning" />
+
+    <com.app.infideap.stylishwidget.view.AButton
+        style="@style/Button.Danger.Outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danger" />
+
+</LinearLayout>

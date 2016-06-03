@@ -40,10 +40,41 @@
         <item name="android:background">@drawable/selector_button_accent</item>
     </style>
 
-    <style name="Button.Outline" parent="Button.Inverse">
+    <style name="Button.Default.Outline" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_outline</item>
         <item name="android:textColor">@drawable/selector_text_outline</item>
     </style>
+    <style name="Button.Primary.Outline" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_outline_primary</item>
+        <item name="android:textColor">@drawable/selector_text_outline_primary</item>
+    </style>
+
+    <style name="Button.Accent.Outline" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_outline_accent</item>
+        <item name="android:textColor">@drawable/selector_text_outline_accent</item>
+    </style>
+
+    <style name="Button.Warning.Outline" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_outline_warning</item>
+        <item name="android:textColor">@drawable/selector_text_outline_warning</item>
+    </style>
+
+    <style name="Button.Danger.Outline" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_outline_danger</item>
+        <item name="android:textColor">@drawable/selector_text_outline_danger</item>
+    </style>
+
+    <style name="Button.Info.Outline" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_outline_info</item>
+        <item name="android:textColor">@drawable/selector_text_outline_info</item>
+    </style>
+
+    <style name="Button.Success.Outline" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_outline_success</item>
+        <item name="android:textColor">@drawable/selector_text_outline_success</item>
+    </style>
+
+
 
 </resources>
  

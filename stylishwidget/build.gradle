@@ -27,12 +27,12 @@ dependencies {
 }
 // This is the actual solution, as in http://stackoverflow.com/a/19037807/1002054
 task clearJar(type: Delete) {
-    delete 'build/libs/myCompiledLibrary.jar'
+    delete 'build/libs/stylishwidget1.0.jar'
 }
 
 task makeJar(type: Copy) {
     from('build/intermediates/bundles/release/')
-    into('libs/')
+    into('jar/')
     include('classes.jar')
     rename ('classes.jar', 'stylishwidget1.0.jar')
 }
