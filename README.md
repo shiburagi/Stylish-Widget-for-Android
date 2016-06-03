@@ -4,7 +4,8 @@
 This library I use in my previous and current android project and may got an issue and error. 
 I will keep improve this library until it stable and useful.
 
-![Screenshot](https://github.com/shiburagi/Stylish-Widget/blob/master/device-2016-05-29-210824.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-06-04-011914.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-06-04-011939.png)
 
 ## Features
  * set custom font for almost all view.
@@ -13,13 +14,13 @@ I will keep improve this library until it stable and useful.
 Android 7.0+ support
 
 ## Download
- * **JAR** : (https://github.com/shiburagi/Stylish-Widget/blob/master/stylishwidget/libs/stylishwidget1.0.jar?raw=true)
+ * **JAR** : (https://github.com/shiburagi/Stylish-Widget-for-Android/tree/master/stylishwidget/jar)
  * **APK** : (https://drive.google.com/file/d/0Bw_drx3o3plaZVptWWNxWUdfSmM/view?usp=sharing) 
 
 ## Including In Your Project
 This library is presented as a `.jar` file which you can include in the `libs/`
 folder of your application. You can download the latest version from the
-[github repo](https://github.com/shiburagi/Stylish-Widget/blob/master/stylishwidget/libs/stylishwidget1.0.jar?raw=true).
+[github repo](https://github.com/shiburagi/Stylish-Widget-for-Android/tree/master/stylishwidget/jar).
 
 **or**,
 you can include it by **download this project** and **import /stylishwidget** as **module**.
