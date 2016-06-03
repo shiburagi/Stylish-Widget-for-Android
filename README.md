@@ -1,4 +1,6 @@
 # StylishWidget
+
+**StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and use **third party font**.
 This library I use in my previous and current android project and may got an issue and error. 
 I will keep improve this library until it stable and useful.
 
@@ -11,20 +13,20 @@ I will keep improve this library until it stable and useful.
 Android 7.0+ support
 
 ## Download
- * **JAR** : (https://drive.google.com/file/d/0Bw_drx3o3plaVjZaM0VCS3RFMG8/view?usp=sharing)
+ * **JAR** : (https://github.com/shiburagi/Stylish-Widget/blob/master/stylishwidget/libs/stylishwidget1.0.jar?raw=true)
  * **APK** : (https://drive.google.com/file/d/0Bw_drx3o3plaZVptWWNxWUdfSmM/view?usp=sharing) 
 
 ## Including In Your Project
 This library is presented as a `.jar` file which you can include in the `libs/`
 folder of your application. You can download the latest version from the
-[google drive](https://drive.google.com/file/d/0Bw_drx3o3plaVjZaM0VCS3RFMG8/view?usp=sharing).
+[github repo](https://github.com/shiburagi/Stylish-Widget/blob/master/stylishwidget/libs/stylishwidget1.0.jar?raw=true).
 
 **or**,
 you can include it by **download this project** and **import /stylishwidget** as **module**.
 
 ## Usage
 
-**NOTE:**　**Initialize** this line of code at the **top of onCreate() in main activity**, or at the **onCreate() of Custom** Application.
+**NOTE:** If you want to use **third-party font**, must **initialize** this line of code at the **top of onCreate() in main activity**, or at the **onCreate() of Custom** Application.
 
 ``` java
 // parameter : Normal Font, Bold Font and Italic Font
@@ -32,6 +34,21 @@ Stylish.getInstance().set(
                 fontFolder.concat("Rajdhani-Regular.ttf"),
                 fontFolder.concat("Rajdhani-Bold.ttf"),
                 fontFolder.concat("Rajdhani-Light.ttf"));
+```
+**or**
+``` java
+// parameter : Normal Font
+Stylish.getInstance().setFontRegular(
+                fontFolder.concat("Rajdhani-Regular.ttf")
+);
+// parameter : Bold Font
+Stylish.getInstance().setFontBold(
+                fontFolder.concat("Rajdhani-Bold.ttf")
+);
+// parameter : Italic Font
+Stylish.getInstance().setFontItalic(
+                fontFolder.concat("Rajdhani-Light.ttf"))
+);
 ```
 
 to **use the widget**, is **same** like using **android widget**
