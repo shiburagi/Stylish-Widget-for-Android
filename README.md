@@ -5,6 +5,7 @@ This library I use in my previous and current android project and may got an iss
 I will keep improve this library until it stable and useful.
 
 ![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-06-04-011914.png)
+
 ![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-06-04-011939.png)
 
 ## Features
