@@ -48,8 +48,8 @@ public class MessageBox extends FrameLayout {
     }
 
     public void init(AttributeSet attrs) {
-//        setBackgroundResource(R.color.black_transparent);
-        // get All attribute of CustomTextView in xml file
+        if(isInEditMode())
+            return;
 
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.messageBox);
         RelativeLayout layout = (RelativeLayout) LayoutInflater.from(getContext())

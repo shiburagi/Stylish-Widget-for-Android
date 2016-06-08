@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <com.app.infideap.stylishwidget.view.ATextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/widgetsample"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.infideap.stylishwidget.view.ATextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/textinputeditextexample" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.app.infideap.stylishwidget.view.ATextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditText.RoundBorder"
+            android:hint="@string/textinputeditexwithstyletexample" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.app.infideap.stylishwidget.view.AEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editextexample" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.app.infideap.stylishwidget.view.AEditText
+        style="@style/EditText.RoundBorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editextwithstyleexample" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <com.app.infideap.stylishwidget.view.ATextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/textviewexample"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <com.app.infideap.stylishwidget.view.ATextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/textviewexamplebold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <com.app.infideap.stylishwidget.view.ATextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/textviewexampleitalic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="italic" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <com.app.infideap.stylishwidget.view.ACheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkboxexample" />
+
+    <com.app.infideap.stylishwidget.view.ARadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radiobuttonexample" />
+
+</LinearLayout>

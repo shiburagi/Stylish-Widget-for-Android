@@ -12,4 +12,8 @@
     <string name="textviewexampleitalic">TextView Example (Italic)</string>
     <string name="plainbuttonsample">Plain Button Sample</string>
     <string name="outlinebuttonsample">Outline Button Sample</string>
+    <string name="widgetsample">Widget Sample</string>
+    <string name="textinputeditextexample">TextInputEditText Example</string>
+    <string name="editextwithstyleexample">EditText(with Style) Example</string>
+    <string name="textinputeditexwithstyletexample">TextInputEditText(with Style) Example</string>
 </resources>

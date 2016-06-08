@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 7
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
     }
     buildTypes {
         release {
@@ -27,7 +27,7 @@ dependencies {
 }
 // This is the actual solution, as in http://stackoverflow.com/a/19037807/1002054
 task clearJar(type: Delete) {
-    delete 'build/libs/stylishwidget1.0.jar'
+    delete 'build/libs/stylishwidget1.1.jar'
 }
 
 task makeJar(type: Copy) {

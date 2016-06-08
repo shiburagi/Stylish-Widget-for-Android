@@ -1,43 +1,34 @@
 package com.app.infideap.stylishwidget.view;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.os.Build;
-import android.support.v7.widget.AppCompatCheckBox;
+import android.support.design.widget.TextInputEditText;
+import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
-import android.widget.CheckBox;
 
 
 /**
  * Created by Zariman on 13/4/2016.
  */
-public class ACheckBox extends AppCompatCheckBox {
-    public ACheckBox(Context context) {
+public class ATextInputEditText extends TextInputEditText {
+    public ATextInputEditText(Context context) {
         super(context);
-        setCustomTypeface(context,null);
+        setCustomTypeface(context, null);
 
     }
 
-    public ACheckBox(Context context, AttributeSet attrs) {
+    public ATextInputEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setCustomTypeface(context,attrs);
+        setCustomTypeface(context, attrs);
 
     }
 
-    public ACheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ATextInputEditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setCustomTypeface(context,attrs);
+        setCustomTypeface(context, attrs);
 
     }
-
-//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-//    public ACheckBox(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-//        super(context, attrs, defStyleAttr, defStyleRes);
-//        setCustomTypeface(context,attrs);
-//    }
-
 
     private void setCustomTypeface(Context context, AttributeSet attrs) {
         if(isInEditMode())
@@ -67,7 +58,6 @@ public class ACheckBox extends AppCompatCheckBox {
         }
 
         try {
-
             setTypeface(Stylish.getInstance().getTypeface(getContext(), font, getTypeface()));
         } catch (Exception e) {
 //            e.printStackTrace();

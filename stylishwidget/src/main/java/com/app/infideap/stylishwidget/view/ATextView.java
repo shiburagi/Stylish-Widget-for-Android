@@ -38,6 +38,8 @@ public class ATextView extends TextView {
     }
 
     private void setCustomTypeface(Context context, AttributeSet attrs) {
+        if(isInEditMode())
+            return;
         TypedArray a = context.obtainStyledAttributes(attrs, android.support.v7.appcompat.R.styleable.TextAppearance);
         int style = a.getInt(android.support.v7.appcompat.R.styleable.TextAppearance_android_textStyle, Typeface.NORMAL);
 
