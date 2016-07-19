@@ -6,11 +6,10 @@ I will keep improve this library until it stable and useful.
 
 ![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-06-04-011914.png)
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-06-04-011939.png)
-
 ## Features
  * set custom font for almost all view.
  * Message Box
+ * Progress Bar
 
 Android 7.0+ support
 
@@ -53,6 +52,12 @@ Stylish.getInstance().setFontItalic(
 );
 ```
 
+
+
+## Widget
+
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211518.png)
+
 to **use the widget**, is **same** like using **android widget**
 
 **EditText**
@@ -91,7 +96,12 @@ android:layout_height="wrap_content"
 android:text="@string/radiobuttonexample"/>
 ```
 
-**Button**
+
+
+## Button
+
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211544.png)
+
 ``` xml
 <com.app.infideap.stylishwidget.view.AButton
 style="@style/Button.Default"
@@ -100,7 +110,12 @@ android:layout_height="wrap_content"
 android:text="Default" />
 ```
 
-**MessageBox**
+
+
+## Message Box
+
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211608.png)
+
 ``` xml
 <com.app.infideap.stylishwidget.view.MessageBox
 android:id="@+id/message_info"
@@ -151,6 +166,11 @@ warningMessageBox.setActionButton(R.string.learnmore, new View.OnClickListener()
 ```
 
 however, only **one action** can be use for **a MessageBox**
+
+
+## Progress Bar
+
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211638.png)
 
 
 ## Contact
