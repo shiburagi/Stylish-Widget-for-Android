@@ -48,8 +48,6 @@ public class MessageBox extends FrameLayout {
     }
 
     public void init(AttributeSet attrs) {
-        if(isInEditMode())
-            return;
 
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.messageBox);
         RelativeLayout layout = (RelativeLayout) LayoutInflater.from(getContext())
@@ -124,13 +122,17 @@ public class MessageBox extends FrameLayout {
         a.recycle();
         layout.setPadding(leftPadding, topPadding, rightPadding, bottomPadding);
 
-        textView = (ATextView) layout.findViewById(R.id.textView_message);
+        try {
+            textView = (ATextView) layout.findViewById(R.id.textView_message);
 
-        textView.setText(message);
-        textView.setTextStyle(textStyle);
-        if (drawable != null) {
-            textView.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null);
-            textView.setCompoundDrawablePadding(drawablePadding);
+            textView.setText(message);
+            textView.setTextStyle(textStyle);
+            if (drawable != null) {
+                textView.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null);
+                textView.setCompoundDrawablePadding(drawablePadding);
+            }
+        }catch (Exception e){
+
         }
         button = (Button) layout.findViewById(R.id.button_action);
         imageView = (ImageView) layout.findViewById(R.id.imageView_close);
@@ -144,6 +146,14 @@ public class MessageBox extends FrameLayout {
         });
 
 
+    }
+
+
+    public void setMessage(int resId) {
+        textView.setText(resId);
+    }
+    public void setMessage(String message){
+        textView.setText(message);
     }
 
     public void setCloseButton(final OnClickListener listener) {
@@ -166,6 +176,7 @@ public class MessageBox extends FrameLayout {
         imageView.setVisibility(GONE);
         button.setVisibility(VISIBLE);
     }
+
 }
 
 

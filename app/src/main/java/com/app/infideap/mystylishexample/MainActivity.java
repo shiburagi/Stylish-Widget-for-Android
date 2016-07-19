@@ -1,17 +1,18 @@
 package com.app.infideap.mystylishexample;
 
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 
-import com.app.infideap.stylishwidget.view.MessageBox;
 import com.app.infideap.stylishwidget.view.Stylish;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,56 +25,69 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        initMessageBox();
+        initTabLayout();
+        initViewPager();
     }
 
-    private void initMessageBox() {
-        final MessageBox infoMessageBox = (MessageBox) findViewById(R.id.message_info);
-        assert infoMessageBox != null;
-        infoMessageBox.setCloseButton(new View.OnClickListener() {
+    private void initViewPager() {
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
-            public void onClick(View v) {
-                AlertDialog dialog = new AlertDialog.Builder(MainActivity.this)
-                        .setMessage("Close Button Click!").create();
-                dialog.show();
+            public Fragment getItem(int position) {
+                switch (position) {
+                    case 0:
+                        return WidgetFragment.newInstance();
+                    case 1:
+                        return ButtonPlainFragment.newInstance();
+                    case 2:
+                        return ButtonOutlineFragment.newInstance();
+                    case 3:
+                        return MessageBoxFragment.newInstance();
+                    case 4:
+                        return ProgressBarFragment.newInstance();
+                    default:
+                        return new Fragment();
+                }
+            }
 
-                infoMessageBox.setVisibility(View.GONE);
+            @Override
+            public int getCount() {
+                return tabLayout.getTabCount();
             }
         });
-        MessageBox warningMessageBox = (MessageBox) findViewById(R.id.message_warning);
-        assert warningMessageBox != null;
-        warningMessageBox.setActionButton(R.string.learnmore, new View.OnClickListener() {
+
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+    }
+
+    private void initTabLayout() {
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        assert tabLayout != null;
+
+        TabLayout.Tab[] tabs = {
+                tabLayout.newTab().setText(R.string.widget),
+                tabLayout.newTab().setText(R.string.plainbutton),
+                tabLayout.newTab().setText(R.string.outlinebutton),
+                tabLayout.newTab().setText(R.string.messagebox),
+                tabLayout.newTab().setText(R.string.progressbar),
+        };
+
+        for (TabLayout.Tab tab : tabs)
+            tabLayout.addTab(tab);
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
-            public void onClick(View v) {
-                AlertDialog dialog = new AlertDialog.Builder(MainActivity.this)
-                        .setMessage("Warning Action Click!").create();
-                dialog.show();
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
             }
         });
-
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -40,6 +40,10 @@
         <item name="android:background">@drawable/selector_button_accent</item>
     </style>
 
+    <style name="Button.Success.Fill" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_success_fill</item>
+    </style>
+
     <style name="Button.Default.Outline" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_outline</item>
         <item name="android:textColor">@drawable/selector_text_outline</item>

@@ -5,7 +5,6 @@ import android.graphics.Typeface;
 import android.util.Log;
 
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Locale;

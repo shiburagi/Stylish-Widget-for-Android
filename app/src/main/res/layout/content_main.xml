@@ -1,73 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:id="@+id/viewPager"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.app.infideap.mystylishexample.MainActivity"
     tools:showIn="@layout/activity_main">
-
-    <com.app.infideap.stylishwidget.view.MessageBox
-        android:id="@+id/message_info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:boxBackground="@color/colorSuccess"
-        app:message="@string/helloworld" />
-
-    <com.app.infideap.stylishwidget.view.MessageBox
-        android:id="@+id/message_warning"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:boxBackground="@color/colorWarning"
-        app:message="@string/warning" />
-
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin">
-
-
-            <include layout="@layout/layout_widget"/>
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="20dp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:background="#ccc" />
-
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="10dp" />
-
-            <include layout="@layout/layout_button_plain" />
-
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="20dp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:background="#ccc" />
-
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="10dp" />
-
-            <include layout="@layout/layout_button_outline" />
-        </LinearLayout>
-
-    </android.support.v4.widget.NestedScrollView>
-</LinearLayout>
+</android.support.v4.view.ViewPager>

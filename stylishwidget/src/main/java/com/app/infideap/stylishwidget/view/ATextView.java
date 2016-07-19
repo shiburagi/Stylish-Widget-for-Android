@@ -1,18 +1,17 @@
 package com.app.infideap.stylishwidget.view;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Build;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 
 /**
  * Created by Zariman on 13/4/2016.
  */
-public class ATextView extends TextView {
+public class ATextView extends AppCompatTextView {
     public ATextView(Context context) {
         super(context);
         setCustomTypeface(context, null);
@@ -31,11 +30,12 @@ public class ATextView extends TextView {
 
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public ATextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        setCustomTypeface(context, attrs);
-    }
+//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+//    public ATextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+//        super(context, attrs, defStyleAttr, defStyleRes);
+//
+//        setCustomTypeface(context, attrs);
+//    }
 
     private void setCustomTypeface(Context context, AttributeSet attrs) {
         if(isInEditMode())
@@ -49,6 +49,9 @@ public class ATextView extends TextView {
     }
 
     public void setTextStyle(int style) {
+        if(isInEditMode())
+            return;
+
         String font;
         switch (style) {
             case Typeface.BOLD:
@@ -72,5 +75,11 @@ public class ATextView extends TextView {
         }
     }
 
+    public void setSupportTextAppearance(int resId){
+        if (Build.VERSION.SDK_INT >= 23)
+            this.setTextAppearance(resId);
+        else
+            this.setTextAppearance(getContext(),resId);
+    }
 
 }

@@ -1,13 +1,11 @@
 package com.app.infideap.stylishwidget.view;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.support.v7.widget.AppCompatRadioButton;
 import android.util.AttributeSet;
-import android.widget.RadioButton;
 
 
 /**
@@ -71,6 +69,13 @@ public class ARadioButton extends AppCompatRadioButton {
         } catch (Exception e) {
 //            e.printStackTrace();
         }
+    }
+
+    public void setSupportTextAppearance(int resId){
+        if (Build.VERSION.SDK_INT >= 23)
+            this.setTextAppearance(resId);
+        else
+            this.setTextAppearance(getContext(),resId);
     }
 
 }

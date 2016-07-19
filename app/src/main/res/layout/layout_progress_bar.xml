@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/progressbarsample"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plainprogressbar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:maxValue="100"
+            app:progressBackground="#ccc"
+            app:progressColor="@color/colorAccent"
+            app:progressValue="30" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/roundprogressbar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:maxValue="100"
+            app:progressBackground="#ccc"
+            app:progressColor="@color/colorAccent"
+            app:progressValue="30"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/roundprogressbarwithtext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:maxValue="100"
+            app:progressBackground="#ccc"
+            app:progressColor="@color/colorAccent"
+            app:progressText="30%"
+            app:progressTextStyle="bold"
+            app:progressValue="30"
+            app:radius="7dp"
+            app:withAnimation="true" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiprogressbar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:id="@+id/progressBar_multi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="1dp"
+            app:progressBackground="#ccc"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiprogressbarwithcolor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:id="@+id/progressBar_multi_color"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="1dp"
+            app:progressBackground="#ccc"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiprogressbarwithcolorandtext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:id="@+id/progressBar_multi_color_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="1dp"
+            app:progressBackground="#ccc"
+            app:progressTextStyle="bold"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiprogressbarwithicon"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:id="@+id/progressBar_multi_icon"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="1dp"
+            app:progressBackground="#ccc"
+            app:progressIconPadding="10dp"
+            app:progressTextStyle="bold"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reverseplainprogressbar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            app:maxValue="100"
+            app:progressBackground="#ccc"
+            app:progressColor="@color/colorAccent"
+            app:progressValue="30" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reverseroundprogressbar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            app:maxValue="100"
+            app:progressBackground="#ccc"
+            app:progressColor="@color/colorAccent"
+            app:progressValue="30"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reverseroundprogressbarwithtext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            app:maxValue="100"
+            app:progressBackground="#ccc"
+            app:progressColor="@color/colorAccent"
+            app:progressText="30%"
+            app:progressTextStyle="bold"
+            app:progressValue="30"
+            app:radius="7dp"
+            app:withAnimation="true" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reversemultiprogressbar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:id="@+id/progressBar_reverse_multi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:padding="1dp"
+            app:progressBackground="#ccc"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reversemultiprogressbarwithcolor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:id="@+id/progressBar_reverse_multi_color"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:padding="1dp"
+            app:progressBackground="#ccc"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reversemultiprogressbarwithcolorandtext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:id="@+id/progressBar_reverse_multi_color_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:padding="1dp"
+            app:progressBackground="#ccc"
+            app:progressTextStyle="bold"
+            app:radius="7dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reversemultiprogressbarwithicon"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.app.infideap.stylishwidget.view.AProgressBar
+            android:id="@+id/progressBar_reverse_multi_icon"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="1dp"
+            android:gravity="right"
+            app:progressBackground="#ccc"
+            app:progressIconPadding="10dp"
+            app:progressTextStyle="bold"
+            app:radius="7dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

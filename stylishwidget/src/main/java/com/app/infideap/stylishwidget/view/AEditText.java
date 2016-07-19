@@ -3,6 +3,7 @@ package com.app.infideap.stylishwidget.view;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 
@@ -61,6 +62,13 @@ public class AEditText extends AppCompatEditText {
         } catch (Exception e) {
 //            e.printStackTrace();
         }
+    }
+
+    public void setSupportTextAppearance(int resId){
+        if (Build.VERSION.SDK_INT >= 23)
+            this.setTextAppearance(resId);
+        else
+            this.setTextAppearance(getContext(),resId);
     }
 
 }

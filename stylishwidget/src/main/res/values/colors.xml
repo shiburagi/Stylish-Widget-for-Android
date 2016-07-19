@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorLine">#999</color>
     <color name="colorWhite">#fff</color>
     <color name="colorEditTextDefault">#aaa</color>
     <color name="colorEditTextFocus">@color/colorAccent</color>

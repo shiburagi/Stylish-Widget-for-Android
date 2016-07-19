@@ -16,4 +16,24 @@
     <string name="textinputeditextexample">TextInputEditText Example</string>
     <string name="editextwithstyleexample">EditText(with Style) Example</string>
     <string name="textinputeditexwithstyletexample">TextInputEditText(with Style) Example</string>
+    <string name="plainprogressbar">Plain Progress Bar</string>
+    <string name="progressbarsample">Progress Bar Sample</string>
+    <string name="roundprogressbarwithtext">Round Progress Bar (With Text)</string>
+    <string name="roundprogressbar">Round Progress Bar</string>
+    <string name="multiprogressbar">Multi Progress Bar</string>
+    <string name="multiprogressbarwithcolor">Multi Progress Bar (With Color)</string>
+    <string name="multiprogressbarwithcolorandtext"><![CDATA[Multi Progress Bar (With Color & Text)]]></string>
+    <string name="reverseplainprogressbar">Reverse Plain Progress Bar</string>
+    <string name="reverseroundprogressbar">Reverse Round Progress Bar</string>
+    <string name="reverseroundprogressbarwithtext">Reverse Round Progress Bar (With Text)</string>
+    <string name="reversemultiprogressbar">Reverse Multi Progress Bar</string>
+    <string name="reversemultiprogressbarwithcolor">Reverse Multi Progress Bar (With Color)</string>
+    <string name="reversemultiprogressbarwithcolorandtext"><![CDATA[Reverse Multi Progress Bar (With Color & Text)]]></string>
+    <string name="widget">Widget</string>
+    <string name="plainbutton">Plain Button</string>
+    <string name="outlinebutton">Outline Button</string>
+    <string name="messagebox">Message Box</string>
+    <string name="progressbar">Progress Bar</string>
+    <string name="multiprogressbarwithicon">Multi Progress Bar (With Icon)</string>
+    <string name="reversemultiprogressbarwithicon">Reverse Multi Progress Bar (With Icon)</string>
 </resources>
