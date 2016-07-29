@@ -186,24 +186,24 @@ however, only **one action** can be use for **a MessageBox**
 ```
 Here the **list** of available attributes for progress bar,
 ``` xml
-	<attr name="maxValue" format="float" />
-	<attr name="progressValue" format="float" />
-	<attr name="radius" format="dimension" />
-	<attr name="progressColor" format="color" />
-	<attr name="progressText" format="string" />
-	<attr name="progressTextSize" format="dimension" />
-	<attr name="progressTextStyle" format="enum">
-	<enum name="normal" value="0" />
-	<enum name="bold" value="1" />
-	<enum name="italic" value="2" />
-	</attr>
-	<attr name="progressPadding" format="dimension" />
-	<attr name="progressIconPadding" format="dimension" />
-	<attr name="withAnimation" format="boolean" />
-	<attr name="duration" format="integer"/>
-	<attr name="progressTextAppearance" format="reference"/>
-	<attr name="progressBackground" format="color"/>
-	<attr name="progressIcon" format="reference"/>
+<attr name="maxValue" format="float" />
+<attr name="progressValue" format="float" />
+<attr name="radius" format="dimension" />
+<attr name="progressColor" format="color" />
+<attr name="progressText" format="string" />
+<attr name="progressTextSize" format="dimension" />
+<attr name="progressTextStyle" format="enum">
+<enum name="normal" value="0" />
+<enum name="bold" value="1" />
+<enum name="italic" value="2" />
+</attr>
+<attr name="progressPadding" format="dimension" />
+<attr name="progressIconPadding" format="dimension" />
+<attr name="withAnimation" format="boolean" />
+<attr name="duration" format="integer"/>
+<attr name="progressTextAppearance" format="reference"/>
+<attr name="progressBackground" format="color"/>
+<attr name="progressIcon" format="reference"/>
 ```
 and, here the list of all declare function in AProgressBar class,
 ``` java
@@ -245,35 +245,35 @@ setProgressIconPadding(int padding)
 
 ### Example for multiple progress bar,
 ``` java
-  AProgressBar iconMultiProgressBar =
-	        (AProgressBar) view.findViewById(R.id.progressBar_multi_icon);
-	iconMultiProgressBar.setProgressValues(
-	        30,
-	        150,
-	        90,
-	        70);
+AProgressBar iconMultiProgressBar =
+        (AProgressBar) view.findViewById(R.id.progressBar_multi_icon);
+iconMultiProgressBar.setProgressValues(
+        30,
+        150,
+        90,
+        70);
 
-	iconMultiProgressBar.setProgressColors(
-	        Color.parseColor("#039BE5"),
-	        Color.parseColor("#8BC34A"),
-	        Color.parseColor("#FBC02D"),
-	        Color.parseColor("#f44336"));
+iconMultiProgressBar.setProgressColors(
+        Color.parseColor("#039BE5"),
+        Color.parseColor("#8BC34A"),
+        Color.parseColor("#FBC02D"),
+        Color.parseColor("#f44336"));
 
-	iconMultiProgressBar.setProgressTexts(
-	        "30%",
-	        "150%",
-	        "90%",
-	        "70%"
-	);
-	iconMultiProgressBar.setProgressIcons(
-	    R.drawable.ic_directions_run_white_24dp,
-	    R.drawable.ic_directions_bike_white_24dp,
-	    R.drawable.ic_directions_boat_white_24dp,
-	    R.drawable.ic_directions_subway_white_24dp
-	);
+iconMultiProgressBar.setProgressTexts(
+        "30%",
+        "150%",
+        "90%",
+        "70%"
+);
+iconMultiProgressBar.setProgressIcons(
+    R.drawable.ic_directions_run_white_24dp,
+    R.drawable.ic_directions_bike_white_24dp,
+    R.drawable.ic_directions_boat_white_24dp,
+    R.drawable.ic_directions_subway_white_24dp
+);
 
-	iconMultiProgressBar.setMaxValue(100);
-	iconMultiProgressBar.withAnimation(1000);
+iconMultiProgressBar.setMaxValue(100);
+iconMultiProgressBar.withAnimation(1000);
 ```
 For more **progress bar example**, please refer on the link below :
 
