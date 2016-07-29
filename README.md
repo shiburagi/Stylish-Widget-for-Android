@@ -170,6 +170,113 @@ however, only **one action** can be use for **a MessageBox**
 
 ![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211638.png)
 
+**Sample code (XML):**
+``` xml
+ <com.app.infideap.stylishwidget.view.AProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:maxValue="100"
+            app:progressBackground="#ccc"
+            app:progressColor="@color/colorAccent"
+            app:progressText="30%"
+            app:progressTextStyle="bold"
+            app:progressValue="30"
+            app:radius="7dp"
+            app:withAnimation="true" />
+```
+Here the **list** of available attributes for progress bar,
+``` xml
+        <attr name="maxValue" format="float" />
+        <attr name="progressValue" format="float" />
+        <attr name="radius" format="dimension" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressText" format="string" />
+        <attr name="progressTextSize" format="dimension" />
+        <attr name="progressTextStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+        </attr>
+        <attr name="progressPadding" format="dimension" />
+        <attr name="progressIconPadding" format="dimension" />
+        <attr name="withAnimation" format="boolean" />
+        <attr name="duration" format="integer"/>
+        <attr name="progressTextAppearance" format="reference"/>
+        <attr name="progressBackground" format="color"/>
+        <attr name="progressIcon" format="reference"/>
+```
+and, here the list of all declare function in AProgressBar class,
+``` java
+setProgressBackground(int color) 
+getProgressValue()
+getProgressValue(int index)
+setPadding(int padding)
+setMaxValue(float value)
+setProgressValue(float value)
+setProgressValue(int index, float value)
+setProgressValues(float ...values)
+addProgressValue(float value)
+addProgressValue(float value, int color)
+removeProgressValue(int index)
+setProgressColor(int color)
+setProgressColor(int index, int color)
+setProgressColors(int ...colors)
+setProgressValueWithColor(int index, float value, int color)
+setProgressText(int resId)
+setProgressText(String text)
+setProgressText(int index, int resId)
+setProgressText(int index, String text)
+setProgressTexts(int ...resId)
+setProgressTexts(String ...texts)
+setProgressValueAndText(int index, float value, int resId)
+setProgressValueAndText(int index, float value, String text)
+setProgressIcon(int resId)
+setProgressIcon(Drawable icon)
+setProgressIcon(int index, int resId)
+setProgressIcon(int index, Drawable icon)
+setProgressIcons(int ...resId)
+setProgressIcons(Drawable ...icons)
+setGravity(int gravity)
+withAnimation(long duration)
+setProgressTextStyle(int textStyle)
+setProgressTextAppearance(int resId)
+setProgressIconPadding(int padding)
+```
+
+### Example for multiple progress bar,
+``` java
+  AProgressBar iconMultiProgressBar =
+	        (AProgressBar) view.findViewById(R.id.progressBar_multi_icon);
+	iconMultiProgressBar.setProgressValues(
+	        30,
+	        150,
+	        90,
+	        70);
+
+	iconMultiProgressBar.setProgressColors(
+	        Color.parseColor("#039BE5"),
+	        Color.parseColor("#8BC34A"),
+	        Color.parseColor("#FBC02D"),
+	        Color.parseColor("#f44336"));
+
+	iconMultiProgressBar.setProgressTexts(
+	        "30%",
+	        "150%",
+	        "90%",
+	        "70%"
+	);
+	iconMultiProgressBar.setProgressIcons(
+	    R.drawable.ic_directions_run_white_24dp,
+	    R.drawable.ic_directions_bike_white_24dp,
+	    R.drawable.ic_directions_boat_white_24dp,
+	    R.drawable.ic_directions_subway_white_24dp
+	);
+
+	iconMultiProgressBar.setMaxValue(100);
+	iconMultiProgressBar.withAnimation(1000);
+```
+For more **progress bar example**, please refer on the link below :
+https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main/java/com/app/infideap/mystylishexample/ProgressBarFragment.java
 
 ## Contact
 For any enquiries, please send an email to tr32010@gmail.com. 
