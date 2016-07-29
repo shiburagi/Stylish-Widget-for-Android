@@ -186,24 +186,24 @@ however, only **one action** can be use for **a MessageBox**
 ```
 Here the **list** of available attributes for progress bar,
 ``` xml
-        <attr name="maxValue" format="float" />
-        <attr name="progressValue" format="float" />
-        <attr name="radius" format="dimension" />
-        <attr name="progressColor" format="color" />
-        <attr name="progressText" format="string" />
-        <attr name="progressTextSize" format="dimension" />
-        <attr name="progressTextStyle" format="enum">
-            <enum name="normal" value="0" />
-            <enum name="bold" value="1" />
-            <enum name="italic" value="2" />
-        </attr>
-        <attr name="progressPadding" format="dimension" />
-        <attr name="progressIconPadding" format="dimension" />
-        <attr name="withAnimation" format="boolean" />
-        <attr name="duration" format="integer"/>
-        <attr name="progressTextAppearance" format="reference"/>
-        <attr name="progressBackground" format="color"/>
-        <attr name="progressIcon" format="reference"/>
+	<attr name="maxValue" format="float" />
+	<attr name="progressValue" format="float" />
+	<attr name="radius" format="dimension" />
+	<attr name="progressColor" format="color" />
+	<attr name="progressText" format="string" />
+	<attr name="progressTextSize" format="dimension" />
+	<attr name="progressTextStyle" format="enum">
+	<enum name="normal" value="0" />
+	<enum name="bold" value="1" />
+	<enum name="italic" value="2" />
+	</attr>
+	<attr name="progressPadding" format="dimension" />
+	<attr name="progressIconPadding" format="dimension" />
+	<attr name="withAnimation" format="boolean" />
+	<attr name="duration" format="integer"/>
+	<attr name="progressTextAppearance" format="reference"/>
+	<attr name="progressBackground" format="color"/>
+	<attr name="progressIcon" format="reference"/>
 ```
 and, here the list of all declare function in AProgressBar class,
 ``` java
