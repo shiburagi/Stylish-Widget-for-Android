@@ -194,9 +194,9 @@ Here the **list** of available attributes for progress bar,
 <attr name="progressText" format="string" />
 <attr name="progressTextSize" format="dimension" />
 <attr name="progressTextStyle" format="enum">
-<enum name="normal" value="0" />
-<enum name="bold" value="1" />
-<enum name="italic" value="2" />
+  <enum name="normal" value="0" />
+  <enum name="bold" value="1" />
+  <enum name="italic" value="2" />
 </attr>
 <attr name="progressPadding" format="dimension" />
 <attr name="progressIconPadding" format="dimension" />
