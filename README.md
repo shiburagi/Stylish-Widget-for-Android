@@ -276,6 +276,7 @@ setProgressIconPadding(int padding)
 	iconMultiProgressBar.withAnimation(1000);
 ```
 For more **progress bar example**, please refer on the link below :
+
 https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main/java/com/app/infideap/mystylishexample/ProgressBarFragment.java
 
 ## Contact
