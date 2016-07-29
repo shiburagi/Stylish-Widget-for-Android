@@ -1,7 +1,8 @@
 # StylishWidget
 
-**StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and use **third party font**.
-This library I use in my previous and current android project and may got an issue and error. 
+**StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and allow to use **third party font**.
+This library also contain few view that created by me and,
+I use it in my previous and current android project and may got an issue and error. 
 I will keep improve this library until it stable and useful.
 
 ## Features
