@@ -1,17 +1,18 @@
 package com.app.infideap.stylishwidget.view;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Build;
-import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
+import android.widget.TextView;
 
 
 /**
  * Created by Zariman on 13/4/2016.
  */
-public class ATextView extends AppCompatTextView {
+public class ATextView extends TextView {
     public ATextView(Context context) {
         super(context);
         setCustomTypeface(context, null);
@@ -30,12 +31,12 @@ public class ATextView extends AppCompatTextView {
 
     }
 
-//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-//    public ATextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-//        super(context, attrs, defStyleAttr, defStyleRes);
-//
-//        setCustomTypeface(context, attrs);
-//    }
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public ATextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+
+        setCustomTypeface(context, attrs);
+    }
 
     private void setCustomTypeface(Context context, AttributeSet attrs) {
         if(isInEditMode())

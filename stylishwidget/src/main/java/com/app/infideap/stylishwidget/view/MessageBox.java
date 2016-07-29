@@ -131,7 +131,7 @@ public class MessageBox extends FrameLayout {
                 textView.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null);
                 textView.setCompoundDrawablePadding(drawablePadding);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
 
         }
         button = (Button) layout.findViewById(R.id.button_action);
@@ -152,7 +152,8 @@ public class MessageBox extends FrameLayout {
     public void setMessage(int resId) {
         textView.setText(resId);
     }
-    public void setMessage(String message){
+
+    public void setMessage(String message) {
         textView.setText(message);
     }
 
@@ -169,13 +170,18 @@ public class MessageBox extends FrameLayout {
         button.setVisibility(GONE);
     }
 
-    public void setActionButton(int text, OnClickListener onClickListener) {
+    public void setActionButton(int text, OnClickListener listener) {
+        setActionButton(getResources().getString(text), listener);
+    }
+
+    public void setActionButton(String text, OnClickListener listener) {
 
         button.setText(text);
-        button.setOnClickListener(onClickListener);
+        button.setOnClickListener(listener);
         imageView.setVisibility(GONE);
         button.setVisibility(VISIBLE);
     }
+
 
 }
 

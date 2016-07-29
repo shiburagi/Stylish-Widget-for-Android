@@ -6,8 +6,10 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.app.infideap.stylishwidget.view.MessageBox;
+import com.app.infideap.stylishwidget.view.MessageBoxDialog;
 
 
 /**
@@ -64,6 +66,17 @@ public class MessageBoxFragment extends Fragment {
                 AlertDialog dialog = new AlertDialog.Builder(getContext())
                         .setMessage("Warning Action Click!").create();
                 dialog.show();
+            }
+        });
+
+        Button button = (Button) view.findViewById(R.id.button_bottomsheetmessagebox);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MessageBoxDialog.Builder builder = new
+                        MessageBoxDialog.Builder(getContext())
+                        .setMessage(R.string.bottomsheetmessagebox);
+                builder.create().show();
             }
         });
 

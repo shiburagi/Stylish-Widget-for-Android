@@ -1,17 +1,18 @@
 package com.app.infideap.stylishwidget.view;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Build;
-import android.support.v7.widget.AppCompatRadioButton;
 import android.util.AttributeSet;
+import android.widget.RadioButton;
 
 
 /**
  * Created by Zariman on 13/4/2016.
  */
-public class ARadioButton extends AppCompatRadioButton {
+public class ARadioButton extends RadioButton {
     public ARadioButton(Context context) {
         super(context);
         setCustomTypeface(context, null);
@@ -20,7 +21,7 @@ public class ARadioButton extends AppCompatRadioButton {
 
     public ARadioButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setCustomTypeface(context,attrs);
+        setCustomTypeface(context, attrs);
 
     }
 
@@ -30,13 +31,14 @@ public class ARadioButton extends AppCompatRadioButton {
 
     }
 
-//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-//    public ARadioButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-//        super(context, attrs, defStyleAttr, defStyleRes);
-//        setCustomTypeface(context,attrs);
-//    }
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public ARadioButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+        setCustomTypeface(context, attrs);
+    }
+
     private void setCustomTypeface(Context context, AttributeSet attrs) {
-        if(isInEditMode())
+        if (isInEditMode())
             return;
         TypedArray a = context.obtainStyledAttributes(attrs, android.support.v7.appcompat.R.styleable.TextAppearance);
         int style = a.getInt(android.support.v7.appcompat.R.styleable.TextAppearance_android_textStyle, Typeface.NORMAL);
@@ -71,11 +73,11 @@ public class ARadioButton extends AppCompatRadioButton {
         }
     }
 
-    public void setSupportTextAppearance(int resId){
+    public void setSupportTextAppearance(int resId) {
         if (Build.VERSION.SDK_INT >= 23)
             this.setTextAppearance(resId);
         else
-            this.setTextAppearance(getContext(),resId);
+            this.setTextAppearance(getContext(), resId);
     }
 
 }

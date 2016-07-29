@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <LinearLayout
@@ -23,5 +24,23 @@
             app:message="@string/warning"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine"/>
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <com.app.infideap.stylishwidget.view.AButton
+            android:id="@+id/button_bottomsheetmessagebox"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Button.Success"
+            android:text="@string/clickmeforbottomsheetmessageboxsample"/>
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

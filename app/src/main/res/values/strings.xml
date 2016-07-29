@@ -36,4 +36,6 @@
     <string name="progressbar">Progress Bar</string>
     <string name="multiprogressbarwithicon">Multi Progress Bar (With Icon)</string>
     <string name="reversemultiprogressbarwithicon">Reverse Multi Progress Bar (With Icon)</string>
+    <string name="clickmeforbottomsheetmessageboxsample">Click me for bottom sheet messagebox.</string>
+    <string name="bottomsheetmessagebox">Bottom Sheet Message Box</string>
 </resources>
