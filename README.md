@@ -5,6 +5,9 @@ This library also contain few view that created by me and,
 I use it in my previous and current android project and may got an issue and error. 
 I will keep improve this library until it stable and useful.
 
+## New update
+ * custom declare-styleable prefix added
+
 ## Features
  * set custom font for almost all view.
  * Message Box
@@ -120,21 +123,21 @@ android:text="Default" />
 android:id="@+id/message_info"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
-app:boxBackground="@color/colorSuccess"
-app:message="@string/helloworld" />
+app:sw_boxBackground="@color/colorSuccess"
+app:sw_message="@string/helloworld" />
 ```
 
 for the **MessageBox**, there are several **new declare-styleable** need to **highlight**,
-* app:boxBackground - to set background color, only color allow.
-* app:message - to set display text.
-* app:textStyle - to set textView style, (normal, bold, italic).
-* app:innerPadding - to set inner padding of message box.
-* app:innerLeftPadding - to set inner left padding of message box.
-* app:innerTopPadding - to set inner top padding of message box.
-* app:innerRightPadding - to set inner right padding of message box.
-* app:innerBottomPadding - to set inner bottom padding of message box.
-* app:drawable - to set textView drawable.
-* app:drawablePadding - to set padding of textView drawable.
+* app:sw_boxBackground - to set background color, only color allow.
+* app:sw_message - to set display text.
+* app:sw_textStyle - to set textView style, (normal, bold, italic).
+* app:sw_innerPadding - to set inner padding of message box.
+* app:sw_innerLeftPadding - to set inner left padding of message box.
+* app:sw_innerTopPadding - to set inner top padding of message box.
+* app:sw_innerRightPadding - to set inner right padding of message box.
+* app:sw_innerBottomPadding - to set inner bottom padding of message box.
+* app:sw_drawable - to set textView drawable.
+* app:sw_drawablePadding - to set padding of textView drawable.
 
 and for **MessageBox** there are **two kind** of **listener or action mode**,
 
@@ -187,24 +190,24 @@ however, only **one action** can be use for **a MessageBox**
 ```
 Here the **list** of available attributes for progress bar,
 ``` xml
-<attr name="maxValue" format="float" />
-<attr name="progressValue" format="float" />
-<attr name="radius" format="dimension" />
-<attr name="progressColor" format="color" />
-<attr name="progressText" format="string" />
-<attr name="progressTextSize" format="dimension" />
-<attr name="progressTextStyle" format="enum">
+<attr name="sw_maxValue" format="float" />
+<attr name="sw_progressValue" format="float" />
+<attr name="sw_radius" format="dimension" />
+<attr name="sw_progressColor" format="color" />
+<attr name="sw_progressText" format="string" />
+<attr name="sw_progressTextSize" format="dimension" />
+<attr name="sw_progressTextStyle" format="enum">
   <enum name="normal" value="0" />
   <enum name="bold" value="1" />
   <enum name="italic" value="2" />
 </attr>
-<attr name="progressPadding" format="dimension" />
-<attr name="progressIconPadding" format="dimension" />
-<attr name="withAnimation" format="boolean" />
-<attr name="duration" format="integer"/>
-<attr name="progressTextAppearance" format="reference"/>
-<attr name="progressBackground" format="color"/>
-<attr name="progressIcon" format="reference"/>
+<attr name="sw_progressPadding" format="dimension" />
+<attr name="sw_progressIconPadding" format="dimension" />
+<attr name="sw_withAnimation" format="boolean" />
+<attr name="sw_duration" format="integer"/>
+<attr name="sw_progressTextAppearance" format="reference"/>
+<attr name="sw_progressBackground" format="color"/>
+<attr name="sw_progressIcon" format="reference"/>
 ```
 and, here the list of all declare function in AProgressBar class,
 ``` java
