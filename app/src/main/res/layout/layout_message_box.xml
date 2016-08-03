@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,34 +13,38 @@
 
         <com.app.infideap.stylishwidget.view.MessageBox
             android:id="@+id/message_info"
-            app:boxBackground="@color/colorSuccess"
-            app:message="@string/helloworld"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:sw_boxBackground="@color/colorSuccess"
+            app:sw_message="@string/helloworld" />
 
         <com.app.infideap.stylishwidget.view.MessageBox
             android:id="@+id/message_warning"
-            app:boxBackground="@color/colorWarning"
-            app:message="@string/warning"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:sw_boxBackground="@color/colorWarning"
+            app:sw_message="@string/warning" />
+
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="@color/colorLine"/>
+            android:background="@color/colorLine" />
+
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
+
         <com.app.infideap.stylishwidget.view.AButton
             android:id="@+id/button_bottomsheetmessagebox"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            style="@style/Button.Success"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Button.Success"
-            android:text="@string/clickmeforbottomsheetmessageboxsample"/>
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/clickmeforbottomsheetmessageboxsample" />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

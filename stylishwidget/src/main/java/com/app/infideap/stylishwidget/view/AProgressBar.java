@@ -82,26 +82,26 @@ public class AProgressBar extends LinearLayout {
         sortProgress = new ArrayList<>();
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.progressBar);
-        setMaxValue(a.getFloat(R.styleable.progressBar_maxValue, 0f));
-        setProgressValue(a.getFloat(R.styleable.progressBar_progressValue, 0f));
-        setProgressText(a.getString(R.styleable.progressBar_progressText));
-        setProgressTextStyle(a.getInt(R.styleable.progressBar_progressTextStyle, 0));
-        setProgressTextAppearance(a.getInt(R.styleable.progressBar_progressTextAppearance, 0));
-        setProgressTextSize(a.getDimension(R.styleable.progressBar_progressTextSize,
+        setMaxValue(a.getFloat(R.styleable.progressBar_sw_maxValue, 0f));
+        setProgressValue(a.getFloat(R.styleable.progressBar_sw_progressValue, 0f));
+        setProgressText(a.getString(R.styleable.progressBar_sw_progressText));
+        setProgressTextStyle(a.getInt(R.styleable.progressBar_sw_progressTextStyle, 0));
+        setProgressTextAppearance(a.getInt(R.styleable.progressBar_sw_progressTextAppearance, 0));
+        setProgressTextSize(a.getDimension(R.styleable.progressBar_sw_progressTextSize,
                 getResources().getDimension(R.dimen.progressTextSize)));
-        setProgressIcon(a.getDrawable(R.styleable.progressBar_progressIcon));
-        setRadius(a.getDimensionPixelSize(R.styleable.progressBar_radius, 0));
-        setPadding(a.getDimensionPixelSize(R.styleable.progressBar_progressPadding, 0));
-        setProgressIconPadding(a.getDimensionPixelSize(R.styleable.progressBar_progressIconPadding,0));
+        setProgressIcon(a.getDrawable(R.styleable.progressBar_sw_progressIcon));
+        setRadius(a.getDimensionPixelSize(R.styleable.progressBar_sw_radius, 0));
+        setPadding(a.getDimensionPixelSize(R.styleable.progressBar_sw_progressPadding, 0));
+        setProgressIconPadding(a.getDimensionPixelSize(R.styleable.progressBar_sw_progressIconPadding,0));
 
-        setProgressColor(a.getColor(R.styleable.progressBar_progressColor, Color.rgb(255, 255, 255)));
-        setProgressBackground(a.getColor(R.styleable.progressBar_progressBackground, Color.argb(0, 0, 0, 0)));
+        setProgressColor(a.getColor(R.styleable.progressBar_sw_progressColor, Color.rgb(255, 255, 255)));
+        setProgressBackground(a.getColor(R.styleable.progressBar_sw_progressBackground, Color.argb(0, 0, 0, 0)));
 
         refresh();
 
         if (!isInEditMode()) {
-            if (a.getBoolean(R.styleable.progressBar_withAnimation, false))
-                withAnimation(a.getInteger(R.styleable.progressBar_duration, 1000));
+            if (a.getBoolean(R.styleable.progressBar_sw_withAnimation, false))
+                withAnimation(a.getInteger(R.styleable.progressBar_sw_duration, 1000));
         }
         a.recycle();
     }

@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="messageBox">
-        <attr name="message" format="string" />
-        <attr name="textStyle" format="enum">
+        <attr name="sw_message" format="string" />
+        <attr name="sw_textStyle" format="enum">
             <enum name="normal" value="0" />
             <enum name="bold" value="1" />
             <enum name="italic" value="2" />
         </attr>
-        <attr name="innerPadding" format="dimension" />
-        <attr name="innerLeftPadding" format="dimension" />
-        <attr name="innerTopPadding" format="dimension" />
-        <attr name="innerRightPadding" format="dimension" />
-        <attr name="innerBottomPadding" format="dimension" />
-        <attr name="drawable" format="reference" />
-        <attr name="drawablePadding" format="dimension" />
-        <attr name="boxBackground" format="color" />
+        <attr name="sw_innerPadding" format="dimension" />
+        <attr name="sw_innerLeftPadding" format="dimension" />
+        <attr name="sw_innerTopPadding" format="dimension" />
+        <attr name="sw_innerRightPadding" format="dimension" />
+        <attr name="sw_innerBottomPadding" format="dimension" />
+        <attr name="sw_drawable" format="reference" />
+        <attr name="sw_drawablePadding" format="dimension" />
+        <attr name="sw_boxBackground" format="color" />
     </declare-styleable>
     <declare-styleable name="progressBar">
-        <attr name="maxValue" format="float" />
-        <attr name="progressValue" format="float" />
-        <attr name="radius" format="dimension" />
-        <attr name="progressColor" format="color" />
-        <attr name="progressText" format="string" />
-        <attr name="progressTextSize" format="dimension" />
-        <attr name="progressTextStyle" format="enum">
+        <attr name="sw_maxValue" format="float" />
+        <attr name="sw_progressValue" format="float" />
+        <attr name="sw_radius" format="dimension" />
+        <attr name="sw_progressColor" format="color" />
+        <attr name="sw_progressText" format="string" />
+        <attr name="sw_progressTextSize" format="dimension" />
+        <attr name="sw_progressTextStyle" format="enum">
             <enum name="normal" value="0" />
             <enum name="bold" value="1" />
             <enum name="italic" value="2" />
         </attr>
-        <attr name="progressPadding" format="dimension" />
-        <attr name="progressIconPadding" format="dimension" />
-        <attr name="withAnimation" format="boolean" />
-        <attr name="duration" format="integer"/>
-        <attr name="progressTextAppearance" format="reference"/>
-        <attr name="progressBackground" format="color"/>
-        <attr name="progressIcon" format="reference"/>
+        <attr name="sw_progressPadding" format="dimension" />
+        <attr name="sw_progressIconPadding" format="dimension" />
+        <attr name="sw_withAnimation" format="boolean" />
+        <attr name="sw_duration" format="integer"/>
+        <attr name="sw_progressTextAppearance" format="reference"/>
+        <attr name="sw_progressBackground" format="color"/>
+        <attr name="sw_progressIcon" format="reference"/>
     </declare-styleable>
 </resources>
