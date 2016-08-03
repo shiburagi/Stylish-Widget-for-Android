@@ -27,7 +27,9 @@ public class Stylish {
         instance = new Stylish();
     }
 
-    private Stylish(){
+    private float fontScale = 1.0f;
+
+    private Stylish() {
     }
 
     public void set(String regular, String bold, String italic) {
@@ -60,7 +62,7 @@ public class Stylish {
                         font);
 
                 Stylish.TYPEFACE.put(font, typeface);
-            }catch (Exception e){
+            } catch (Exception e) {
                 Log.e(TAG,
                         String.format(
                                 Locale.getDefault(),
@@ -82,5 +84,13 @@ public class Stylish {
         } catch (IOException e) {
             return false;
         }
+    }
+
+    public float getFontScale() {
+        return fontScale;
+    }
+
+    public void setFontScale(float fontScale) {
+        this.fontScale = fontScale;
     }
 }

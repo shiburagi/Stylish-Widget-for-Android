@@ -39,6 +39,12 @@ public class AButton extends Button {
         setTextStyle(style);
         a.recycle();
 
+        post(new Runnable() {
+            @Override
+            public void run() {
+                //setTextSize(getTextSize() * Stylish.getInstance().getFontScale());
+            }
+        });
     }
 
     public void setTextStyle(int style) {

@@ -40,8 +40,19 @@
         <item name="android:background">@drawable/selector_button_accent</item>
     </style>
 
+    <style name="Button.Transparent" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_transparent</item>
+    </style>
+
     <style name="Button.Success.Fill" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_success_fill</item>
+    </style>
+    <style name="Button.Warning.Fill" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_warning_fill</item>
+    </style>
+
+    <style name="Button.SemiTransparent.Fill" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_semi_transparent_fill</item>
     </style>
 
     <style name="Button.Default.Outline" parent="Button.Inverse">
@@ -76,6 +87,11 @@
     <style name="Button.Success.Outline" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_outline_success</item>
         <item name="android:textColor">@drawable/selector_text_outline_success</item>
+    </style>
+
+    <style name="Button.SemiTransparent.Outline" parent="Button.Inverse">
+        <item name="android:background">@drawable/layerlist_button_outline_semi_transparent</item>
+        <item name="android:textColor">@drawable/selector_text_outline</item>
     </style>
 
 

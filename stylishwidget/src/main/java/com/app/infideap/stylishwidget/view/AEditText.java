@@ -22,6 +22,7 @@ public class AEditText extends AppCompatEditText {
         super(context, attrs);
         setCustomTypeface(context, attrs);
 
+
     }
 
     public AEditText(Context context, AttributeSet attrs, int defStyleAttr) {

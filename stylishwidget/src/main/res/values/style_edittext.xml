@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="EditText.RoundBorder" parent="Widget.AppCompat.EditText">
-        <item name="android:background">@drawable/selector_edittext_round_border</item>
+        <item name="android:background">@drawable/selector_edittext_round_border_line</item>
         <item name="android:padding">15sp</item>
+    </style>
+    <style name="EditText.RoundBorder.Transparent" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/selector_edittext_round_border_transparent</item>
+        <item name="android:padding">15sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhiteTransparent</item>
     </style>
 </resources>
