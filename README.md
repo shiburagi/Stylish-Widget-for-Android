@@ -1,8 +1,12 @@
 # StylishWidget
 
-**StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and use **third party font**.
-This library I use in my previous and current android project and may got an issue and error. 
+**StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and allow to use **third party font**.
+This library also contain few view that created by me and,
+I use it in my previous and current android project and may got an issue and error. 
 I will keep improve this library until it stable and useful.
+
+## New update
+ * custom declare-styleable prefix added
 
 ## Features
  * set custom font for almost all view.
@@ -119,21 +123,21 @@ android:text="Default" />
 android:id="@+id/message_info"
 android:layout_width="match_parent"
 android:layout_height="wrap_content"
-app:boxBackground="@color/colorSuccess"
-app:message="@string/helloworld" />
+app:sw_boxBackground="@color/colorSuccess"
+app:sw_message="@string/helloworld" />
 ```
 
 for the **MessageBox**, there are several **new declare-styleable** need to **highlight**,
-* app:boxBackground - to set background color, only color allow.
-* app:message - to set display text.
-* app:textStyle - to set textView style, (normal, bold, italic).
-* app:innerPadding - to set inner padding of message box.
-* app:innerLeftPadding - to set inner left padding of message box.
-* app:innerTopPadding - to set inner top padding of message box.
-* app:innerRightPadding - to set inner right padding of message box.
-* app:innerBottomPadding - to set inner bottom padding of message box.
-* app:drawable - to set textView drawable.
-* app:drawablePadding - to set padding of textView drawable.
+* app:sw_boxBackground - to set background color, only color allow.
+* app:sw_message - to set display text.
+* app:sw_textStyle - to set textView style, (normal, bold, italic).
+* app:sw_innerPadding - to set inner padding of message box.
+* app:sw_innerLeftPadding - to set inner left padding of message box.
+* app:sw_innerTopPadding - to set inner top padding of message box.
+* app:sw_innerRightPadding - to set inner right padding of message box.
+* app:sw_innerBottomPadding - to set inner bottom padding of message box.
+* app:sw_drawable - to set textView drawable.
+* app:sw_drawablePadding - to set padding of textView drawable.
 
 and for **MessageBox** there are **two kind** of **listener or action mode**,
 
@@ -170,6 +174,114 @@ however, only **one action** can be use for **a MessageBox**
 
 ![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211638.png)
 
+**Sample code (XML):**
+``` xml
+ <com.app.infideap.stylishwidget.view.AProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:maxValue="100"
+            app:progressBackground="#ccc"
+            app:progressColor="@color/colorAccent"
+            app:progressText="30%"
+            app:progressTextStyle="bold"
+            app:progressValue="30"
+            app:radius="7dp"
+            app:withAnimation="true" />
+```
+Here the **list** of available attributes for progress bar,
+``` xml
+<attr name="sw_maxValue" format="float" />
+<attr name="sw_progressValue" format="float" />
+<attr name="sw_radius" format="dimension" />
+<attr name="sw_progressColor" format="color" />
+<attr name="sw_progressText" format="string" />
+<attr name="sw_progressTextSize" format="dimension" />
+<attr name="sw_progressTextStyle" format="enum">
+  <enum name="normal" value="0" />
+  <enum name="bold" value="1" />
+  <enum name="italic" value="2" />
+</attr>
+<attr name="sw_progressPadding" format="dimension" />
+<attr name="sw_progressIconPadding" format="dimension" />
+<attr name="sw_withAnimation" format="boolean" />
+<attr name="sw_duration" format="integer"/>
+<attr name="sw_progressTextAppearance" format="reference"/>
+<attr name="sw_progressBackground" format="color"/>
+<attr name="sw_progressIcon" format="reference"/>
+```
+and, here the list of all declare function in AProgressBar class,
+``` java
+setProgressBackground(int color) 
+getProgressValue()
+getProgressValue(int index)
+setPadding(int padding)
+setMaxValue(float value)
+setProgressValue(float value)
+setProgressValue(int index, float value)
+setProgressValues(float ...values)
+addProgressValue(float value)
+addProgressValue(float value, int color)
+removeProgressValue(int index)
+setProgressColor(int color)
+setProgressColor(int index, int color)
+setProgressColors(int ...colors)
+setProgressValueWithColor(int index, float value, int color)
+setProgressText(int resId)
+setProgressText(String text)
+setProgressText(int index, int resId)
+setProgressText(int index, String text)
+setProgressTexts(int ...resId)
+setProgressTexts(String ...texts)
+setProgressValueAndText(int index, float value, int resId)
+setProgressValueAndText(int index, float value, String text)
+setProgressIcon(int resId)
+setProgressIcon(Drawable icon)
+setProgressIcon(int index, int resId)
+setProgressIcon(int index, Drawable icon)
+setProgressIcons(int ...resId)
+setProgressIcons(Drawable ...icons)
+setGravity(int gravity)
+withAnimation(long duration)
+setProgressTextStyle(int textStyle)
+setProgressTextAppearance(int resId)
+setProgressIconPadding(int padding)
+```
+
+### Example for multiple progress bar,
+``` java
+AProgressBar iconMultiProgressBar =
+        (AProgressBar) view.findViewById(R.id.progressBar_multi_icon);
+iconMultiProgressBar.setProgressValues(
+        30,
+        150,
+        90,
+        70);
+
+iconMultiProgressBar.setProgressColors(
+        Color.parseColor("#039BE5"),
+        Color.parseColor("#8BC34A"),
+        Color.parseColor("#FBC02D"),
+        Color.parseColor("#f44336"));
+
+iconMultiProgressBar.setProgressTexts(
+        "30%",
+        "150%",
+        "90%",
+        "70%"
+);
+iconMultiProgressBar.setProgressIcons(
+    R.drawable.ic_directions_run_white_24dp,
+    R.drawable.ic_directions_bike_white_24dp,
+    R.drawable.ic_directions_boat_white_24dp,
+    R.drawable.ic_directions_subway_white_24dp
+);
+
+iconMultiProgressBar.setMaxValue(100);
+iconMultiProgressBar.withAnimation(1000);
+```
+For more **progress bar example**, please refer on the link below :
+
+https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main/java/com/app/infideap/mystylishexample/ProgressBarFragment.java
 
 ## Contact
 For any enquiries, please send an email to tr32010@gmail.com. 
