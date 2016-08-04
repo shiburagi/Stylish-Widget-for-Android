@@ -179,14 +179,14 @@ however, only **one action** can be use for **a MessageBox**
  <com.app.infideap.stylishwidget.view.AProgressBar
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            app:maxValue="100"
-            app:progressBackground="#ccc"
-            app:progressColor="@color/colorAccent"
-            app:progressText="30%"
-            app:progressTextStyle="bold"
-            app:progressValue="30"
-            app:radius="7dp"
-            app:withAnimation="true" />
+            app:sw_maxValue="100"
+            app:sw_progressBackground="#ccc"
+            app:sw_progressColor="@color/colorAccent"
+            app:sw_progressText="30%"
+            app:sw_progressTextStyle="bold"
+            app:sw_progressValue="30"
+            app:sw_radius="7dp"
+            app:sw_withAnimation="true" />
 ```
 Here the **list** of available attributes for progress bar,
 ``` xml
