@@ -6,14 +6,19 @@ I use it in my previous and current android project and may got an issue and err
 I will keep improve this library until it stable and useful.
 
 ## New update
+ * Indicator TabLayout added
  * custom declare-styleable prefix added
 
 ## Features
  * set custom font for almost all view.
  * Message Box
  * Progress Bar
+ * Indicator
 
 Android 7.0+ support
+
+![preview]
+[preview]:https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/preview.gif
 
 ## Download
  * **JAR** : (https://github.com/shiburagi/Stylish-Widget-for-Android/tree/master/stylishwidget/jar)
@@ -169,6 +174,70 @@ warningMessageBox.setActionButton(R.string.learnmore, new View.OnClickListener()
 
 however, only **one action** can be use for **a MessageBox**
 
+## Indicator TabLayout
+
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-11-12-232820.png)
+
+**Sample code (XML):**
+``` xml
+ <com.app.infideap.stylishwidget.view.IndicatorTabLayout
+            android:id="@+id/tabLayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#fff"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed" />
+```
+here the list of all declare function in IndicatorTabLayout.IndicatorTab class,
+``` java
+setText(CharSequence) : void
+setText(int) : void
+setIndicatorText(CharSequence) : void
+setIndicatorVisible(int) : void
+setIcon(Drawable) : void
+setIcon(int) : void
+select() : void
+getPosition() : int
+getTab() : Tab
+from(Tab) : IndicatorTab
+```
+### Example for indicator tabLayout,
+``` java
+final IndicatorTabLayout tabLayout = (IndicatorTabLayout) view.findViewById(R.id.tabLayout_indicator);
+
+TabLayout.Tab[] tabs = {
+        tabLayout.newTab().setText(R.string.calls),
+        tabLayout.newTab().setText(R.string.chats),
+        tabLayout.newTab().setText(R.string.contacts),
+};
+
+for (TabLayout.Tab tab : tabs) {
+    tabLayout.addTab(tab);
+}
+
+tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+    @Override
+    public void onTabSelected(TabLayout.Tab tab) {
+    }
+
+    @Override
+    public void onTabUnselected(TabLayout.Tab tab) {
+
+    }
+
+    @Override
+    public void onTabReselected(TabLayout.Tab tab) {
+    }
+});
+
+tabLayout.getIndicatorTabAt(1).setIndicatorText("200");
+```
+For more **Indicator TabLayout example**, please refer on the link below :
+
+https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main/java/com/app/infideap/mystylishexample/IndicatorTabLayoutFragment.java
+
 
 ## Progress Bar
 
@@ -188,6 +257,7 @@ however, only **one action** can be use for **a MessageBox**
             app:sw_radius="7dp"
             app:sw_withAnimation="true" />
 ```
+
 Here the **list** of available attributes for progress bar,
 ``` xml
 <attr name="sw_maxValue" format="float" />
