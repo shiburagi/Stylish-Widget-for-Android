@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.app.infideap.stylishwidget.view.ATextView
+        android:id="@+id/textView_title"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorWhite" />
+
+    <FrameLayout
+        android:id="@+id/layout_count"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:id="@+id/imageView_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/layerlist_circle_primary" />
+
+        <com.app.infideap.stylishwidget.view.ATextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/textView_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+</LinearLayout>

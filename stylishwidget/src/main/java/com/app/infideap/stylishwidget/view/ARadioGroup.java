@@ -2,6 +2,7 @@ package com.app.infideap.stylishwidget.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
@@ -112,5 +113,21 @@ public class ARadioGroup extends RadioGroup {
 
     public RadioButton getSelected() {
         return selected;
+    }
+
+    @Override
+    public void setEnabled(boolean enabled) {
+        super.setEnabled(enabled);
+//        for (RadioButton radioButton : radioButtons)
+//            radioButton.setEnabled(enabled);
+        if (!enabled)
+            setOnTouchListener(new OnTouchListener() {
+                @Override
+                public boolean onTouch(View view, MotionEvent motionEvent) {
+                    return true;
+                }
+            });
+        else
+            setOnTouchListener(null);
     }
 }

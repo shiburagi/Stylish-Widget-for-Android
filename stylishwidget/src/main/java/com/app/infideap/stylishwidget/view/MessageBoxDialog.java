@@ -2,7 +2,6 @@ package com.app.infideap.stylishwidget.view;
 
 import android.content.Context;
 import android.support.design.widget.BottomSheetDialog;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
 
 /**

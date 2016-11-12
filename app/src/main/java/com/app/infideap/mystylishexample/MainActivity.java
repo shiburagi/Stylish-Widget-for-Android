@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                     case 3:
                         return MessageBoxFragment.newInstance();
                     case 4:
+                        return IndicatorTabLayoutFragment.newInstance();
+                    case 5:
                         return ProgressBarFragment.newInstance();
                     default:
                         return new Fragment();
@@ -68,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 tabLayout.newTab().setText(R.string.plainbutton),
                 tabLayout.newTab().setText(R.string.outlinebutton),
                 tabLayout.newTab().setText(R.string.messagebox),
+                tabLayout.newTab().setText(R.string.indicatortablayout),
                 tabLayout.newTab().setText(R.string.progressbar),
         };
 

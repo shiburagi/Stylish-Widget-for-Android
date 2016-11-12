@@ -78,6 +78,19 @@ public class Stylish {
         return typeface;
     }
 
+    public Typeface reqular(Context context) {
+        return getTypeface(context, FONT_REGULAR, null);
+    }
+
+    public Typeface bold(Context context) {
+        return getTypeface(context, FONT_BOLD, null);
+    }
+
+
+    public Typeface italic(Context context) {
+        return getTypeface(context, FONT_ITALIC, null);
+    }
+
     boolean isExist(Context context, String font) {
         try {
             return Arrays.asList(context.getResources().getAssets().list("")).contains(font);
