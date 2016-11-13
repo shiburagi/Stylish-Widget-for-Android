@@ -26,7 +26,7 @@ Android 7.0+ support
 
 ## Including In Your Project
 This library is presented as a `.jar` file which you can include in the `libs/`
-folder of your application. You can also download the latest version from the
+folder of your application. You can download the latest version from the
 [github repo](https://github.com/shiburagi/Stylish-Widget-for-Android/tree/master/stylishwidget/jar).
 
 If you are a Maven user you can easily include the library by specifying it as
