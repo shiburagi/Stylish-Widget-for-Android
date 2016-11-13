@@ -29,6 +29,25 @@ This library is presented as a `.jar` file which you can include in the `libs/`
 folder of your application. You can download the latest version from the
 [github repo](https://github.com/shiburagi/Stylish-Widget-for-Android/tree/master/stylishwidget/jar).
 
+If you are a Maven user you can easily include the library by specifying it as
+a dependency:
+
+#### Maven
+``` xml
+<dependency>
+  <groupId>com.app.infideap.stylishwidget</groupId>
+  <artifactId>stylish-widget</artifactId>
+  <version>1.0.4</version>
+  <type>pom</type>
+</dependency>
+```
+#### Gradle
+```groovy
+dependencies {
+   compile 'com.app.infideap.stylishwidget:stylish-widget:1.0.4'
+}
+```
+
 **or**,
 you can include it by **download this project** and **import /stylishwidget** as **module**.
 
