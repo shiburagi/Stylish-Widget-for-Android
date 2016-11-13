@@ -29,7 +29,8 @@ dependencies {
     compile 'com.android.support:design:24.1.1'
     compile 'com.nineoldandroids:library:2.4.0'
 }
-apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/' +
+        'master/android-release-aar.gradle'
 // This is the actual solution, as in http://stackoverflow.com/a/19037807/1002054
 task clearJar(type: Delete) {
     delete 'build/libs/stylishwidget1.0.4.jar'
@@ -43,4 +44,5 @@ task makeJar(type: Copy) {
 }
 
 makeJar.dependsOn(clearJar, build)
+
 
