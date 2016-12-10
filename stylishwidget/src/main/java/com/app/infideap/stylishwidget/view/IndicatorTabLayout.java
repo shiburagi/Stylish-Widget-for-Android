@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.app.infideap.stylishwidget.R;
-import com.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by Shiburagi on 26/09/2016.
@@ -41,34 +40,13 @@ public class IndicatorTabLayout extends TabLayout {
 
     @Override
     public void addOnTabSelectedListener(@NonNull final OnTabSelectedListener listener) {
-        OnTabSelectedListener onTabSelectedListener = new OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(Tab tab) {
-                listener.onTabSelected(tab);
-
-                if (tab.getCustomView() != null)
-                    ViewHelper.setAlpha(tab.getCustomView(), 1);
-            }
-
-            @Override
-            public void onTabUnselected(Tab tab) {
-                listener.onTabUnselected(tab);
-                if (tab.getCustomView() != null)
-                    ViewHelper.setAlpha(tab.getCustomView(), 0.7f);
-            }
-
-            @Override
-            public void onTabReselected(Tab tab) {
-                listener.onTabReselected(tab);
-            }
-        };
-        super.addOnTabSelectedListener(onTabSelectedListener);
+        super.addOnTabSelectedListener(listener);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.FROYO)
     @Override
     public void addTab(@NonNull Tab tab, int position, boolean setSelected) {
-        IndicatorTab indicatorTab = new IndicatorTab(getContext(), tab);
+        IndicatorTab indicatorTab = new IndicatorTab(getContext(), tab, this);
         super.addTab(indicatorTab.tab, position, setSelected);
     }
 
@@ -99,7 +77,7 @@ public class IndicatorTabLayout extends TabLayout {
 
 
         @RequiresApi(api = Build.VERSION_CODES.FROYO)
-        private IndicatorTab(Context context, Tab tab) {
+        private IndicatorTab(Context context, Tab tab, TabLayout tabLayout) {
             this.tab = tab;
             this.context = context;
 
@@ -110,11 +88,7 @@ public class IndicatorTabLayout extends TabLayout {
             countImageView.setColorFilter(
                     ContextCompat.getColor(context, R.color.colorWhite));
 
-            if (tab.isSelected())
-                ViewHelper.setAlpha(customView, 1);
-            else
-                ViewHelper.setAlpha(customView, 0.7f);
-
+            titleTextView.setTextColor(tabLayout.getTabTextColors());
 
             titleTextView.setText(tab.getText());
             tab.setCustomView(customView);
