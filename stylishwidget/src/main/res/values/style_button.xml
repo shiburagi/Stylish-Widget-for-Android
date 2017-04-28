@@ -17,8 +17,9 @@
 
     <style name="Button.Primary" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_primary</item>
-
     </style>
+
+
 
     <style name="Button.Success" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_success</item>
@@ -44,11 +45,20 @@
         <item name="android:background">@drawable/selector_button_transparent</item>
     </style>
 
+    <style name="Button.Primary.Fill" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_primary_fill</item>
+    </style>
+    <style name="Button.Accent.Fill" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_accent_fill</item>
+    </style>
     <style name="Button.Success.Fill" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_success_fill</item>
     </style>
     <style name="Button.Warning.Fill" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_warning_fill</item>
+    </style>
+    <style name="Button.Danger.Fill" parent="Button.Inverse">
+        <item name="android:background">@drawable/selector_button_danger_fill</item>
     </style>
 
     <style name="Button.SemiTransparent.Fill" parent="Button.Inverse">

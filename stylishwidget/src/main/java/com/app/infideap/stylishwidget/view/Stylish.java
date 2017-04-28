@@ -106,4 +106,15 @@ public class Stylish {
     public void setFontScale(float fontScale) {
         this.fontScale = fontScale;
     }
+
+
+    public Typeface getRegular() {
+        return TYPEFACE.get(FONT_REGULAR);
+    }
+    public Typeface getBold() {
+        return TYPEFACE.get(FONT_BOLD);
+    }
+    public Typeface getItalic() {
+        return TYPEFACE.get(FONT_ITALIC);
+    }
 }

@@ -3,44 +3,59 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-    <com.app.infideap.stylishwidget.view.ATextView
-        android:id="@+id/textView_title"
-        android:textAllCaps="true"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textColor="@color/colorWhite" />
-
-    <FrameLayout
-        android:id="@+id/layout_count"
-        android:layout_width="wrap_content"
-        android:layout_height="16dp"
-        android:layout_alignParentRight="true"
-        android:layout_gravity="center"
-        android:layout_marginLeft="5dp">
-
-        <ImageView
-            android:id="@+id/imageView_count"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/layerlist_circle_primary" />
+        android:orientation="horizontal">
 
         <com.app.infideap.stylishwidget.view.ATextView
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:id="@+id/textView_count"
-            android:layout_width="match_parent"
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="0"
-
+            android:gravity="center"
+            android:text="adasd"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textColor="@color/colorPrimary"
-            android:textSize="12sp" />
-    </FrameLayout>
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:id="@+id/layout_count"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/layerlist_circle_primary" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:id="@+id/textView_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0"
+
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </LinearLayout>
 
 </LinearLayout>

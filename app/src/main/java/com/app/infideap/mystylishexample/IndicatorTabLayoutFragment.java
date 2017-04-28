@@ -47,8 +47,8 @@ public class IndicatorTabLayoutFragment extends Fragment {
         final IndicatorTabLayout tabLayout = (IndicatorTabLayout) view.findViewById(R.id.tabLayout_indicator);
 
         TabLayout.Tab[] tabs = {
-                tabLayout.newTab().setText(R.string.calls),
-                tabLayout.newTab().setText(R.string.chats),
+                tabLayout.newTab().setText(R.string.calls).setIcon(R.drawable.ic_clear_white_24dp),
+                tabLayout.newTab().setText("asdasdsd asdas asdasads sdasds"),
                 tabLayout.newTab().setText(R.string.contacts),
         };
 

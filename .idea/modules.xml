@@ -5,8 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/Stylish-Widget-for-Android.iml" filepath="$PROJECT_DIR$/Stylish-Widget-for-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stylish-Widget2.iml" filepath="$PROJECT_DIR$/Stylish-Widget2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/stylishwidget/stylishwidget.iml" filepath="$PROJECT_DIR$/stylishwidget/stylishwidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/stylishwidget/stylishwidget.iml" filepath="$PROJECT_DIR$/stylishwidget/stylishwidget.iml" />
     </modules>
   </component>
