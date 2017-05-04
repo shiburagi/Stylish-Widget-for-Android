@@ -8,7 +8,7 @@ I use it in my previous and current android project and may got an issue and err
 I will keep improve this library until it stable and useful.
 
 ## New update
- * Indicator TabLayout added
+ * Meter added
  * custom declare-styleable prefix added
 
 ## Features
