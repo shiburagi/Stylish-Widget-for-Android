@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.app.infideap.stylishwidget.view.AMeter
+            android:id="@+id/meter"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:sw_maxValue="10"
+            app:sw_meterColor="@color/colorWhite"
+            app:sw_showText="true"
+            app:sw_value="8" />
+
+        <com.app.infideap.stylishwidget.view.AMeter
+            android:id="@+id/meter_notext"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:sw_maxValue="10"
+            app:sw_meterColor="@color/colorPrimary"
+            app:sw_showText="false"
+            app:sw_value="8" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -49,14 +49,14 @@ public class MessageBox extends FrameLayout {
 
     public void init(AttributeSet attrs) {
 
-        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.messageBox);
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.propertiesAttr);
         RelativeLayout layout = (RelativeLayout) LayoutInflater.from(getContext())
                 .inflate(R.layout.layout_messagebox, null);
 
         int background;
         try {
             background = a.getColor(
-                    R.styleable.messageBox_sw_boxBackground,
+                    R.styleable.propertiesAttr_sw_boxBackground,
                     getResources().getColor(R.color.colorAccent)
             );
         } catch (Exception e) {
@@ -66,62 +66,65 @@ public class MessageBox extends FrameLayout {
         String message;
 
         try {
-            message = a.getString(R.styleable.messageBox_sw_message);
+            message = a.getString(R.styleable.propertiesAttr_sw_message);
         } catch (Exception e) {
             message = "";
         }
-        int textStyle;
 
-        try {
-            textStyle = a.getInt(R.styleable.messageBox_sw_textStyle, Typeface.NORMAL);
-        } catch (Exception e) {
-            textStyle = Typeface.NORMAL;
-        }
         int padding, topPadding, bottomPadding, leftPadding, rightPadding;
 
         try {
-            padding = a.getDimensionPixelSize(R.styleable.messageBox_sw_innerPadding, layout.getPaddingBottom());
+            padding = a.getDimensionPixelSize(R.styleable.propertiesAttr_sw_innerPadding, layout.getPaddingBottom());
         } catch (Exception e) {
             padding = layout.getPaddingBottom();
         }
         try {
-            leftPadding = a.getDimensionPixelSize(R.styleable.messageBox_sw_innerLeftPadding, padding);
+            leftPadding = a.getDimensionPixelSize(R.styleable.propertiesAttr_sw_innerLeftPadding, padding);
         } catch (Exception e) {
             leftPadding = padding;
         }
         try {
-            rightPadding = a.getDimensionPixelSize(R.styleable.messageBox_sw_innerRightPadding, padding);
+            rightPadding = a.getDimensionPixelSize(R.styleable.propertiesAttr_sw_innerRightPadding, padding);
         } catch (Exception e) {
             rightPadding = padding;
         }
         try {
-            topPadding = a.getDimensionPixelSize(R.styleable.messageBox_sw_innerTopPadding, padding);
+            topPadding = a.getDimensionPixelSize(R.styleable.propertiesAttr_sw_innerTopPadding, padding);
         } catch (Exception e) {
             topPadding = padding;
         }
         try {
-            bottomPadding = a.getDimensionPixelSize(R.styleable.messageBox_sw_innerBottomPadding, padding);
+            bottomPadding = a.getDimensionPixelSize(R.styleable.propertiesAttr_sw_innerBottomPadding, padding);
         } catch (Exception e) {
             bottomPadding = padding;
         }
 
         int drawablePadding;
         try {
-            drawablePadding = a.getDimensionPixelSize(R.styleable.messageBox_sw_innerBottomPadding, padding);
+            drawablePadding = a.getDimensionPixelSize(R.styleable.propertiesAttr_sw_innerBottomPadding, padding);
         } catch (Exception e) {
             drawablePadding = padding;
         }
 
         Drawable drawable;
         try {
-            drawable = a.getDrawable(R.styleable.messageBox_sw_drawable);
+            drawable = a.getDrawable(R.styleable.propertiesAttr_sw_drawable);
         } catch (Exception e) {
             drawable = null;
         }
 
         a.recycle();
         layout.setPadding(leftPadding, topPadding, rightPadding, bottomPadding);
+        a = getContext().obtainStyledAttributes(attrs, R.styleable.textAttr);
 
+        int textStyle;
+
+        try {
+            textStyle = a.getInt(R.styleable.textAttr_sw_textStyle, Typeface.NORMAL);
+        } catch (Exception e) {
+            textStyle = Typeface.NORMAL;
+        }
+        a.recycle();
         try {
             textView = (ATextView) layout.findViewById(R.id.textView_message);
 

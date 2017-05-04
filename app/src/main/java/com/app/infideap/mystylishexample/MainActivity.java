@@ -31,25 +31,21 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViewPager() {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
+        final Fragment[] fragments = new Fragment[]{
+                MeterFragment.newInstance(),
+                WidgetFragment.newInstance(),
+                ButtonPlainFragment.newInstance(),
+                ButtonOutlineFragment.newInstance(),
+                MessageBoxFragment.newInstance(),
+                ProgressBarFragment.newInstance(),
+        };
         viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                switch (position) {
-                    case 0:
-                        return WidgetFragment.newInstance();
-                    case 1:
-                        return ButtonPlainFragment.newInstance();
-                    case 2:
-                        return ButtonOutlineFragment.newInstance();
-                    case 3:
-                        return MessageBoxFragment.newInstance();
-                    case 4:
-                        return IndicatorTabLayoutFragment.newInstance();
-                    case 5:
-                        return ProgressBarFragment.newInstance();
-                    default:
-                        return new Fragment();
-                }
+                if (position<fragments.length)
+                    return fragments[position];
+                else
+                    return new Fragment();
             }
 
             @Override
@@ -66,11 +62,11 @@ public class MainActivity extends AppCompatActivity {
         assert tabLayout != null;
 
         TabLayout.Tab[] tabs = {
+                tabLayout.newTab().setText(R.string.meter),
                 tabLayout.newTab().setText(R.string.widget),
                 tabLayout.newTab().setText(R.string.plainbutton),
                 tabLayout.newTab().setText(R.string.outlinebutton),
                 tabLayout.newTab().setText(R.string.messagebox),
-                tabLayout.newTab().setText(R.string.indicatortablayout),
                 tabLayout.newTab().setText(R.string.progressbar),
         };
 
