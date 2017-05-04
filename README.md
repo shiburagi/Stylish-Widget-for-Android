@@ -19,7 +19,7 @@ I will keep improve this library until it stable and useful.
 
 Android 7.0+ support
 
-![Alt Text](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/preview.gif)
+![Alt Text](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/preview_2.gif)
 
 ## Download
  * **JAR** : (https://github.com/shiburagi/Stylish-Widget-for-Android/tree/master/stylishwidget/jar)
