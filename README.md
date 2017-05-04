@@ -313,7 +313,7 @@ https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main
 
 ## Meter
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-11-12-232820.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2017-05-05-002206.png)
 
 **Sample code (XML):**
 ``` xml
