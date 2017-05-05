@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="progressTextSize">7sp</dimen>
-    <dimen name="meterTextSize">48sp</dimen>
+    <dimen name="meterTextSize">36sp</dimen>
     <dimen name="line_stroke">10dp</dimen>
 </resources>

@@ -40,7 +40,7 @@ public class AMeter extends LinearLayout {
     private int textStyle;
 
     private float textSize;
-    private int gapBottom = (int) Utils.convertDpToPixel(50);
+    private int gapBottom = (int) Utils.convertDpToPixel(30);
     private int minimumSize = (int) Utils.convertDpToPixel(250);
     private boolean showText;
     private int numberOfLine = 1;
@@ -260,14 +260,14 @@ public class AMeter extends LinearLayout {
             if (showNeedle) {
                 canvas.drawText(text,
                         center_x,
-                        center_y + radius + gapBottom / 2, paint);
+                        center_y + radius + gapBottom / 3, paint);
 
                 if (unit.length() > 1) {
 
-                    paint.setTextSize(textSize / 2);
+                    paint.setTextSize(textSize / 4);
                     canvas.drawText(unit,
                             center_x,
-                            center_y + radius + gapBottom / 2 + textSize / 2, paint);
+                            center_y + radius + gapBottom / 3 + textSize / 3.5f, paint);
                 }
             } else {
 
@@ -276,11 +276,11 @@ public class AMeter extends LinearLayout {
                         center_x,
                         center_y + textSize / 2, paint);
                 if (unit.length() > 1) {
-                    paint.setTextSize(textSize / 2);
+                    paint.setTextSize(textSize / 4);
                     canvas.drawText(
                             unit,
                             center_x,
-                            center_y + textSize, paint);
+                            center_y + textSize / 2 + textSize / 3.5f, paint);
                 }
             }
         }

@@ -9,23 +9,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <com.app.infideap.stylishwidget.view.AMeter
             android:id="@+id/linemeter"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/colorAccent"
+            app:sw_lineStrokeSize="30dp"
+            app:sw_lineWidth="0.8"
             app:sw_maxValue="100"
             app:sw_meterColor="@color/colorWhite"
             app:sw_numberOfLine="100"
             app:sw_showNeedle="false"
             app:sw_showText="true"
-            app:sw_lineWidth="0.8"
-            app:sw_textSize="50sp"
-            app:sw_value="100"
-            app:sw_unit="%"
             app:sw_startValue="0"
-            app:sw_lineStrokeSize="30dp" />
+            app:sw_textSize="80dp"
+            app:sw_unit="celsius" />
+
         <com.app.infideap.stylishwidget.view.AMeter
             android:id="@+id/meter"
             android:layout_width="match_parent"
@@ -33,10 +34,12 @@
             android:layout_gravity="center"
             android:background="@color/colorPrimary"
             app:sw_maxValue="100"
-            app:sw_startValue="1"
+            app:sw_textSize="60dp"
             app:sw_meterColor="@color/colorWhite"
             app:sw_showText="true"
-            app:sw_value="8" />
+            app:sw_unit="%"
+            app:sw_value="0" />
+
         <com.app.infideap.stylishwidget.view.AMeter
             android:id="@+id/meter_notext"
             android:layout_width="match_parent"
@@ -46,7 +49,9 @@
             app:sw_maxValue="10"
             app:sw_meterColor="@color/colorPrimary"
             app:sw_showText="false"
-            app:sw_value="8" />
+            app:sw_textSize="60dp"
+            app:sw_unit="%"
+            app:sw_value="0" />
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
