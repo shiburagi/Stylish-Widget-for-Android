@@ -11,7 +11,7 @@
         android:orientation="vertical">
         <com.app.infideap.stylishwidget.view.AMeter
             android:id="@+id/linemeter"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/colorAccent"
@@ -20,7 +20,7 @@
             app:sw_numberOfLine="100"
             app:sw_showNeedle="false"
             app:sw_showText="true"
-            app:sw_lineWidth="0.3"
+            app:sw_lineWidth="0.8"
             app:sw_textSize="50sp"
             app:sw_value="100"
             app:sw_unit="%"
