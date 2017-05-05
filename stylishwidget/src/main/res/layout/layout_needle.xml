@@ -8,11 +8,12 @@
     <LinearLayout
         android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <LinearLayout
+            android:gravity="center_vertical"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -21,8 +22,8 @@
             <View
                 android:id="@+id/view_needle_1"
                 android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/layerlist_circle_accent" />
+                android:layout_height="10dp"
+                android:background="@drawable/layerlist_round_rect_accent" />
 
             <android.support.v4.widget.Space
                 android:layout_width="10dp"
@@ -31,7 +32,7 @@
             <View
                 android:id="@+id/view_needle_2"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/layerlist_round_rect_accent" />
 

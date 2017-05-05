@@ -32,6 +32,9 @@
     </declare-styleable>
     <declare-styleable name="meterAttr">
         <attr name="sw_meterColor" format="color" />
+        <attr name="sw_lineStrokeSize" format="dimension" />
+        <attr name="sw_lineWidth" format="float" />
+        <attr name="sw_showNeedle" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="textAttr">
@@ -44,8 +47,11 @@
     </declare-styleable>
 
     <declare-styleable name="constraintAttr">
+        <attr name="sw_startValue" format="float" />
         <attr name="sw_value" format="float" />
+        <attr name="sw_unit" format="string" />
         <attr name="sw_showText" format="boolean"/>
         <attr name="sw_maxValue" format="float" />
+        <attr name="sw_numberOfLine" format="integer" />
     </declare-styleable>
 </resources>

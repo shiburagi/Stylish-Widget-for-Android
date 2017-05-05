@@ -2,4 +2,5 @@
 <resources>
     <dimen name="progressTextSize">7sp</dimen>
     <dimen name="meterTextSize">48sp</dimen>
+    <dimen name="line_stroke">10dp</dimen>
 </resources>

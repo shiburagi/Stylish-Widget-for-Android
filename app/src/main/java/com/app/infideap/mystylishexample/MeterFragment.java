@@ -45,14 +45,18 @@ public class MeterFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         AMeter meter = (AMeter) view.findViewById(R.id.meter);
-
-        meter.setMaxValue(100);
+        meter.setMaxValue(100f);
         progress(meter, 0);
 
         meter = (AMeter) view.findViewById(R.id.meter_notext);
-
         meter.setMaxValue(100);
         progress(meter, 0);
+
+        AMeter lineMeter = (AMeter) view.findViewById(R.id.linemeter);
+        lineMeter.setMaxValue(100);
+        lineMeter.setStartValue(0);
+        lineMeter.setValue(70);
+        progress(lineMeter, 0);
     }
 
     private void progress(final AMeter meter, final int i) {
@@ -65,4 +69,5 @@ public class MeterFragment extends Fragment {
                 }
             }, 100);
     }
+
 }
