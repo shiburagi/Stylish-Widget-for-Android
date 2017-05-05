@@ -1,6 +1,6 @@
 # StylishWidget
 
-[ ![Download](https://api.bintray.com/packages/infideap2/Stylish-Widget/Stylish-Widget/images/download.svg?version=1.0.9) ](https://bintray.com/infideap2/Stylish-Widget/Stylish-Widget/1.0.9/link)
+[ ![Download](https://api.bintray.com/packages/infideap2/Stylish-Widget/Stylish-Widget/images/download.svg?version=1.1.1) ](https://bintray.com/infideap2/Stylish-Widget/Stylish-Widget/1.1.1/link)
 
 **StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and allow to use **third party font**.
 This library also contain few view that created by me and,
@@ -8,7 +8,7 @@ I use it in my previous and current android project and may got an issue and err
 I will keep improve this library until it stable and useful.
 
 ## New update
- * Indicator TabLayout added
+ * Meter added
  * custom declare-styleable prefix added
 
 ## Features
@@ -19,8 +19,7 @@ I will keep improve this library until it stable and useful.
 
 Android 7.0+ support
 
-![preview]
-[preview]:https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/preview.gif
+![Alt Text](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/preview_2.gif)
 
 ## Download
  * **JAR** : (https://github.com/shiburagi/Stylish-Widget-for-Android/tree/master/stylishwidget/jar)
@@ -39,14 +38,14 @@ a dependency:
 <dependency>
   <groupId>com.app.infideap.stylishwidget</groupId>
   <artifactId>stylish-widget</artifactId>
-  <version>1.0.9</version>
+  <version>1.1.1</version>
   <type>pom</type>
 </dependency>
 ```
 #### Gradle
 ```groovy
 dependencies {
-   compile 'com.app.infideap.stylishwidget:stylish-widget:1.0.9'
+   compile 'com.app.infideap.stylishwidget:stylish-widget:1.1.1'
 }
 ```
 
@@ -195,69 +194,6 @@ warningMessageBox.setActionButton(R.string.learnmore, new View.OnClickListener()
 
 however, only **one action** can be use for **a MessageBox**
 
-## Indicator TabLayout
-
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-11-12-232820.png)
-
-**Sample code (XML):**
-``` xml
- <com.app.infideap.stylishwidget.view.IndicatorTabLayout
-            android:id="@+id/tabLayout_indicator"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            app:tabGravity="fill"
-            app:tabIndicatorColor="#fff"
-            app:tabMaxWidth="0dp"
-            app:tabMode="fixed" />
-```
-here the list of all declare function in IndicatorTabLayout.IndicatorTab class,
-``` java
-setText(CharSequence) : void
-setText(int) : void
-setIndicatorText(CharSequence) : void
-setIndicatorVisible(int) : void
-setIcon(Drawable) : void
-setIcon(int) : void
-select() : void
-getPosition() : int
-getTab() : Tab
-from(Tab) : IndicatorTab
-```
-### Example for indicator tabLayout,
-``` java
-final IndicatorTabLayout tabLayout = (IndicatorTabLayout) view.findViewById(R.id.tabLayout_indicator);
-
-TabLayout.Tab[] tabs = {
-        tabLayout.newTab().setText(R.string.calls),
-        tabLayout.newTab().setText(R.string.chats),
-        tabLayout.newTab().setText(R.string.contacts),
-};
-
-for (TabLayout.Tab tab : tabs) {
-    tabLayout.addTab(tab);
-}
-
-tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-    @Override
-    public void onTabSelected(TabLayout.Tab tab) {
-    }
-
-    @Override
-    public void onTabUnselected(TabLayout.Tab tab) {
-
-    }
-
-    @Override
-    public void onTabReselected(TabLayout.Tab tab) {
-    }
-});
-
-tabLayout.getIndicatorTabAt(1).setIndicatorText("200");
-```
-For more **Indicator TabLayout example**, please refer on the link below :
-
-https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main/java/com/app/infideap/mystylishexample/IndicatorTabLayoutFragment.java
 
 
 ## Progress Bar
@@ -373,6 +309,46 @@ iconMultiProgressBar.withAnimation(1000);
 For more **progress bar example**, please refer on the link below :
 
 https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main/java/com/app/infideap/mystylishexample/ProgressBarFragment.java
+
+## Meter
+
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2017-05-05-002206.png)
+
+**Sample code (XML):**
+``` xml
+ <com.app.infideap.stylishwidget.view.AMeter
+            android:id="@+id/meter"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:sw_maxValue="10"
+            app:sw_meterColor="@color/colorWhite"
+            app:sw_showText="true"
+            app:sw_value="8" />
+```
+here the list of all declare function in IndicatorTabLayout.IndicatorTab class,
+``` java
+setValue(float) : void
+setMaxValue(float) : void
+setMeterColor(int) : void
+setTextStyle(int) : void
+setTextSize(float) : void
+setShowText(boolean) : void
+getValue(int) : float
+getMaxValue() : float
+getMeterColor() : int
+isShowText() : int
+```
+
+### Example for Meter,
+``` java
+AMeter meter = (AMeter) view.findViewById(R.id.meter);
+meter.setMaxValue(100);
+```
+For more **Meter**, please refer on the link below :
+
+https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main/java/com/app/infideap/mystylishexample/MeterFragment.java
 
 ## Contact
 For any enquiries, please send an email to tr32010@gmail.com. 
