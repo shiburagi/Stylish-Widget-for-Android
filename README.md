@@ -1,6 +1,6 @@
 # StylishWidget
 
-[ ![Download](https://api.bintray.com/packages/infideap2/Stylish-Widget/Stylish-Widget/images/download.svg?version=1.1.1) ](https://bintray.com/infideap2/Stylish-Widget/Stylish-Widget/1.1.1/link)
+ [ ![Download](https://api.bintray.com/packages/infideap2/Stylish-Widget/Stylish-Widget/images/download.svg?version=1.1.2) ](https://bintray.com/infideap2/Stylish-Widget/Stylish-Widget/1.1.2/link)
 
 **StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and allow to use **third party font**.
 This library also contain few view that created by me and,
@@ -38,14 +38,14 @@ a dependency:
 <dependency>
   <groupId>com.app.infideap.stylishwidget</groupId>
   <artifactId>stylish-widget</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
   <type>pom</type>
 </dependency>
 ```
 #### Gradle
 ```groovy
 dependencies {
-   compile 'com.app.infideap.stylishwidget:stylish-widget:1.1.1'
+   compile 'com.app.infideap.stylishwidget:stylish-widget:1.1.2'
 }
 ```
 
