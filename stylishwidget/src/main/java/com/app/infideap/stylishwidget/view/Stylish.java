@@ -2,12 +2,11 @@ package com.app.infideap.stylishwidget.view;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.util.Log;
+import android.widget.TextView;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -20,6 +19,7 @@ public class Stylish {
     static String FONT_REGULAR = "";
     static String FONT_BOLD = "";
     static String FONT_ITALIC = "";
+    static String FONT_BOLD_ITALIC = "";
 
     private static final Stylish instance;
 
@@ -38,6 +38,13 @@ public class Stylish {
         FONT_ITALIC = italic;
     }
 
+    public void set(String regular, String bold, String italic, String boldItalic) {
+        FONT_REGULAR = regular;
+        FONT_BOLD = bold;
+        FONT_ITALIC = italic;
+        FONT_BOLD_ITALIC = boldItalic;
+    }
+
     public void setFontRegular(String fontRegular) {
         FONT_REGULAR = fontRegular;
     }
@@ -50,28 +57,28 @@ public class Stylish {
         FONT_ITALIC = fontItalic;
     }
 
+    public void setFontBoldItalic(String fontBoldItalic) {
+        FONT_BOLD_ITALIC = fontBoldItalic;
+    }
+
     public static Stylish getInstance() {
         return instance;
     }
 
-    Typeface getTypeface(Context context, String font, Typeface typeface) {
+    Typeface getTypeface(Context context, String font, int style) {
 
+        Typeface typeface;
         if (!Stylish.TYPEFACE.containsKey(font)) {
             try {
                 typeface = Typeface.createFromAsset(context.getAssets(),
                         font);
-
                 Stylish.TYPEFACE.put(font, typeface);
+
             } catch (Exception e) {
-                Log.e(TAG,
-                        String.format(
-                                Locale.getDefault(),
-                                "Unable to load '%s'. " +
-                                        "Please make sure the path of the font is correct.",
-                                font
-                        )
-                );
+                typeface = Typeface.defaultFromStyle(style);
             }
+
+
         } else
             typeface = Stylish.TYPEFACE.get(font);
 
@@ -79,16 +86,20 @@ public class Stylish {
     }
 
     public Typeface reqular(Context context) {
-        return getTypeface(context, FONT_REGULAR, null);
+        return getTypeface(context, FONT_REGULAR, Typeface.NORMAL);
     }
 
     public Typeface bold(Context context) {
-        return getTypeface(context, FONT_BOLD, null);
+        return getTypeface(context, FONT_BOLD, Typeface.BOLD);
     }
 
 
     public Typeface italic(Context context) {
-        return getTypeface(context, FONT_ITALIC, null);
+        return getTypeface(context, FONT_ITALIC, Typeface.ITALIC);
+    }
+
+    public Typeface boldItalic(Context context) {
+        return getTypeface(context, FONT_BOLD_ITALIC, Typeface.BOLD_ITALIC);
     }
 
     boolean isExist(Context context, String font) {
@@ -111,10 +122,43 @@ public class Stylish {
     public Typeface getRegular() {
         return TYPEFACE.get(FONT_REGULAR);
     }
+
     public Typeface getBold() {
         return TYPEFACE.get(FONT_BOLD);
     }
+
     public Typeface getItalic() {
         return TYPEFACE.get(FONT_ITALIC);
+    }
+
+    public Typeface getBoldItalic() {
+        return TYPEFACE.get(FONT_BOLD_ITALIC);
+    }
+
+    public void setTextStyle(TextView textView, int style) {
+        String font;
+        switch (style) {
+            case Typeface.BOLD:
+                font = Stylish.FONT_BOLD;
+                break;
+            case Typeface.ITALIC:
+                font = Stylish.FONT_ITALIC;
+                break;
+            case Typeface.NORMAL:
+                font = Stylish.FONT_REGULAR;
+                break;
+            case Typeface.BOLD_ITALIC:
+                font = Stylish.FONT_BOLD_ITALIC;
+                break;
+            default:
+                font = Stylish.FONT_REGULAR;
+        }
+
+        try {
+
+            textView.setTypeface(Stylish.getInstance().getTypeface(textView.getContext(), font, style));
+        } catch (Exception e) {
+//            e.printStackTrace();
+        }
     }
 }

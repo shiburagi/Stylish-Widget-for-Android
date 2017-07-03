@@ -45,4 +45,5 @@
     <string name="contacts">Contacts</string>
     <string name="indicatortablayout">Indicator TabLayout</string>
     <string name="meter">Meter</string>
+    <string name="textviewexamplebolditalic">TextView Example (Bold Italic)</string>
 </resources>

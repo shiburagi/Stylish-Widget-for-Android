@@ -3,14 +3,14 @@ package com.app.infideap.stylishwidget.view;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
+import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
-import android.widget.Button;
 
 
 /**
  * Created by Zariman on 13/4/2016.
  */
-public class AButton extends Button {
+public class AButton extends AppCompatButton {
     public AButton(Context context) {
         super(context);
         setCustomTypeface(context, null);
@@ -48,26 +48,6 @@ public class AButton extends Button {
     }
 
     public void setTextStyle(int style) {
-        String font;
-        switch (style) {
-            case Typeface.BOLD:
-                font = Stylish.FONT_BOLD;
-                break;
-            case Typeface.ITALIC:
-                font = Stylish.FONT_ITALIC;
-                break;
-            case Typeface.NORMAL:
-                font = Stylish.FONT_REGULAR;
-                break;
-            default:
-                font = Stylish.FONT_REGULAR;
-        }
-
-        try {
-
-            setTypeface(Stylish.getInstance().getTypeface(getContext(), font, getTypeface()));
-        } catch (Exception e) {
-//            e.printStackTrace();
-        }
+        Stylish.getInstance().setTextStyle(this, style);
     }
 }

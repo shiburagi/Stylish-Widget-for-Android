@@ -42,27 +42,7 @@ public class ACheckBox extends AppCompatCheckBox {
     }
 
     public void setTextStyle(int style) {
-        String font;
-        switch (style) {
-            case Typeface.BOLD:
-                font = Stylish.FONT_BOLD;
-                break;
-            case Typeface.ITALIC:
-                font = Stylish.FONT_ITALIC;
-                break;
-            case Typeface.NORMAL:
-                font = Stylish.FONT_REGULAR;
-                break;
-            default:
-                font = Stylish.FONT_REGULAR;
-        }
-
-        try {
-
-            setTypeface(Stylish.getInstance().getTypeface(getContext(), font, getTypeface()));
-        } catch (Exception e) {
-//            e.printStackTrace();
-        }
+        Stylish.getInstance().setTextStyle(this, style);
     }
     public void setSupportTextAppearance(int resId){
         if (Build.VERSION.SDK_INT >= 23)

@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 ext{
     PUBLISH_GROUP_ID= 'com.app.infideap.stylishwidget'
     PUBLISH_ARTIFACT_ID= 'stylish-widget'
-    PUBLISH_VERSION= '1.1.2'
+    PUBLISH_VERSION= '1.2.1'
 }
 android {
     compileSdkVersion 25
@@ -12,8 +12,8 @@ android {
 
         minSdkVersion 9
         targetSdkVersion 25
-        versionCode 3
-        versionName "1.1.2"
+        versionCode 4
+        versionName "1.2.1"
     }
     buildTypes {
         release {

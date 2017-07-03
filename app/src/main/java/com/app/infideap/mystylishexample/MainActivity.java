@@ -17,11 +17,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Initial this before setContentView or declare in onCreate() of Custom Application
-        String fontFolder = "rajdhani/";
+        String fontFolder = "Exo_2/Exo2-";
         Stylish.getInstance().set(
-                fontFolder.concat("Rajdhani-Regular.ttf"),
-                fontFolder.concat("Rajdhani-Bold.ttf"),
-                fontFolder.concat("Rajdhani-Light.ttf"));
+                fontFolder.concat("Regular.ttf"),
+                fontFolder.concat("Bold.ttf"),
+                fontFolder.concat("Italic.ttf"),
+                fontFolder.concat("BoldItalic.ttf"));
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
