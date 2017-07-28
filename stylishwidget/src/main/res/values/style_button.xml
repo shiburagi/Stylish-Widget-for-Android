@@ -13,51 +13,71 @@
 
     <style name="Button.Default" parent="Button">
         <item name="android:background">@drawable/selector_button_default</item>
+        <item name="android:foreground">@drawable/riple_effect</item>
+        <item name="android:textColor">@drawable/selector_text_fill_default</item>
     </style>
 
     <style name="Button.Primary" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_primary</item>
+        <item name="android:foreground">@drawable/riple_effect</item>
+        <item name="android:textColor">@drawable/selector_text_fill_primary</item>
     </style>
 
 
 
     <style name="Button.Success" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_success</item>
+        <item name="android:foreground">@drawable/riple_effect</item>
+        <item name="android:textColor">@drawable/selector_text_fill_success</item>
     </style>
 
     <style name="Button.Info" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_info</item>
+        <item name="android:foreground">@drawable/riple_effect</item>
+        <item name="android:textColor">@drawable/selector_text_fill_info</item>
     </style>
 
     <style name="Button.Warning" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_warning</item>
+        <item name="android:foreground">@drawable/riple_effect</item>
+        <item name="android:textColor">@drawable/selector_text_fill_warning</item>
     </style>
 
     <style name="Button.Danger" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_danger</item>
+        <item name="android:foreground">@drawable/riple_effect</item>
+        <item name="android:textColor">@drawable/selector_text_fill_danger</item>
     </style>
 
     <style name="Button.Accent" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_accent</item>
+        <item name="android:foreground">@drawable/riple_effect</item>
+        <item name="android:textColor">@drawable/selector_text_fill_accent</item>
     </style>
 
     <style name="Button.Transparent" parent="Button.Inverse">
         <item name="android:background">@drawable/selector_button_transparent</item>
     </style>
 
-    <style name="Button.Primary.Fill" parent="Button.Inverse">
+    <style name="Button.Default.Fill">
+        <item name="android:background">@drawable/selector_button_default_fill</item>
+    </style>
+    <style name="Button.Primary.Fill">
         <item name="android:background">@drawable/selector_button_primary_fill</item>
     </style>
-    <style name="Button.Accent.Fill" parent="Button.Inverse">
+    <style name="Button.Accent.Fill">
         <item name="android:background">@drawable/selector_button_accent_fill</item>
     </style>
-    <style name="Button.Success.Fill" parent="Button.Inverse">
+    <style name="Button.Success.Fill">
         <item name="android:background">@drawable/selector_button_success_fill</item>
     </style>
-    <style name="Button.Warning.Fill" parent="Button.Inverse">
+    <style name="Button.Info.Fill">
+        <item name="android:background">@drawable/selector_button_info_fill</item>
+    </style>
+    <style name="Button.Warning.Fill">
         <item name="android:background">@drawable/selector_button_warning_fill</item>
     </style>
-    <style name="Button.Danger.Fill" parent="Button.Inverse">
+    <style name="Button.Danger.Fill">
         <item name="android:background">@drawable/selector_button_danger_fill</item>
     </style>
 

@@ -46,4 +46,8 @@
     <string name="indicatortablayout">Indicator TabLayout</string>
     <string name="meter">Meter</string>
     <string name="textviewexamplebolditalic">TextView Example (Bold Italic)</string>
+    <string name="fillbuttonsample">Fill Button Sample</string>
+    <string name="fillbuttonsampledisable">Fill Button Sample (Disable)</string>
+    <string name="fillbutton">Fill Button</string>
+    <string name="plainbuttonsampledisable">Plain Button (Disable)</string>
 </resources>

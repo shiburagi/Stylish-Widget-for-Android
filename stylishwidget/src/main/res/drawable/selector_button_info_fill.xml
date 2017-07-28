@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/layerlist_button_primary_fill">
+    <item android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/layerlist_button_info_fill">
 
 
     </item>
-    <item android:state_enabled="false" android:drawable="@drawable/layerlist_button_primary_fill_outline">
+    <item android:state_enabled="false" android:drawable="@drawable/layerlist_button_info_fill_outline">
 
 
     </item>
@@ -14,7 +14,7 @@
                 <layer-list>
                     <item android:bottom="0px" android:left="0px" android:right="0px" android:top="0px">
                         <shape android:shape="rectangle">
-                            <solid android:color="@color/colorPrimary" />
+                            <solid android:color="@color/colorInfo" />
                         </shape>
                     </item>
                 </layer-list>
