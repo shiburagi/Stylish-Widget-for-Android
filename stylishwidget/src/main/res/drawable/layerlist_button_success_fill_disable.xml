@@ -6,4 +6,9 @@
             <stroke android:color="@color/colorSuccess" android:width="2dp"/>
         </shape>
     </item>
+    <item android:bottom="0px" android:left="0px" android:right="0px" android:top="0px">
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/buttonDisableOverlay" android:width="2dp"/>
+        </shape>
+    </item>
 </layer-list>

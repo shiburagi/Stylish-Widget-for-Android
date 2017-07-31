@@ -5,7 +5,7 @@
 
     </item>
 
-    <item android:state_enabled="false" android:drawable="@drawable/layerlist_button_success_fill_outline">
+    <item android:state_enabled="false" android:drawable="@drawable/layerlist_button_success_fill_disable">
 
     </item>
     <item  android:state_pressed="true" android:state_enabled="true">

@@ -4,7 +4,7 @@
 
 
     </item>
-    <item android:state_enabled="false" android:drawable="@drawable/layerlist_button_primary_fill_outline">
+    <item android:state_enabled="false" android:drawable="@drawable/layerlist_button_primary_fill_disable">
 
 
     </item>

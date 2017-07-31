@@ -7,5 +7,6 @@
     <color name="colorSuccess">#5cb85c</color>
     <color name="colorDefault">#e6e6e6</color>
     <color name="colorAccent">#AFB42B</color>
-    <color name="buttonPressOverlay">#05000000</color>
+    <color name="buttonPressOverlay">#10000000</color>
+    <color name="buttonDisableOverlay">#99ffffff</color>
 </resources>

@@ -11,5 +11,14 @@
             <corners android:radius="5px" />
         </shape>
     </item>
-
+    <item
+        android:bottom="10px"
+        android:left="5px"
+        android:right="5px"
+        android:top="10px">
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/buttonDisableOverlay" android:width="2dp"/>
+            <corners android:radius="5px" />
+        </shape>
+    </item>
 </layer-list>

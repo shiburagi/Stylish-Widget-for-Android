@@ -60,24 +60,31 @@
     </style>
 
     <style name="Button.Default.Fill">
+        <item name="android:foreground">@drawable/riple_effect_fill</item>
         <item name="android:background">@drawable/selector_button_default_fill</item>
     </style>
     <style name="Button.Primary.Fill">
+        <item name="android:foreground">@drawable/riple_effect_fill</item>
         <item name="android:background">@drawable/selector_button_primary_fill</item>
     </style>
     <style name="Button.Accent.Fill">
+        <item name="android:foreground">@drawable/riple_effect_fill</item>
         <item name="android:background">@drawable/selector_button_accent_fill</item>
     </style>
     <style name="Button.Success.Fill">
+        <item name="android:foreground">@drawable/riple_effect_fill</item>
         <item name="android:background">@drawable/selector_button_success_fill</item>
     </style>
     <style name="Button.Info.Fill">
+        <item name="android:foreground">@drawable/riple_effect_fill</item>
         <item name="android:background">@drawable/selector_button_info_fill</item>
     </style>
     <style name="Button.Warning.Fill">
+        <item name="android:foreground">@drawable/riple_effect_fill</item>
         <item name="android:background">@drawable/selector_button_warning_fill</item>
     </style>
     <style name="Button.Danger.Fill">
+        <item name="android:foreground">@drawable/riple_effect_fill</item>
         <item name="android:background">@drawable/selector_button_danger_fill</item>
     </style>
 
