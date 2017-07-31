@@ -1,6 +1,6 @@
 # StylishWidget
 
- [ ![Download](null/packages/infideap2/Stylish-Widget/Stylish-Widget/images/download.svg?version=1.3.2) ](https://bintray.com/infideap2/Stylish-Widget/Stylish-Widget/1.3.2/link)
+[ ![Download](https://api.bintray.com/packages/infideap2/Stylish-Widget/Stylish-Widget/images/download.svg) ](https://bintray.com/infideap2/Stylish-Widget/Stylish-Widget/_latestVersion)
 
 **StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and allow to use **third party font**.
 This library also contain few view that created by me and,
