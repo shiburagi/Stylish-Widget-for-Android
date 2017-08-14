@@ -100,7 +100,7 @@ Stylish.getInstance().setFontBoldItalic(
 
 ## Widget
 
-<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705147.png" align="left"  width="300px" ></a>
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705147.png" width="300px">
 
 to **use the widget**, is **same** like using **android widget**
 
@@ -144,8 +144,8 @@ android:text="@string/radiobuttonexample"/>
 
 ## Button
 
-<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704613.png" align="left"  width="300px" ></a>
-<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704667.png" align="left"  width="300px" ></a>
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704613.png" align="left"  width="300px" ></a>
+<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704667.png"  width="300px" ></a>
 
 ``` xml
 <com.app.infideap.stylishwidget.view.AButton
@@ -159,7 +159,7 @@ android:text="Default" />
 
 ## Message Box
 
-<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705154.png" align="left"  width="300px" ></a>
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705154.png" width="300px" >
 
 ``` xml
 <com.app.infideap.stylishwidget.view.MessageBox
@@ -216,7 +216,7 @@ however, only **one action** can be use for **a MessageBox**
 
 ## Progress Bar
 
-<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705158.png" align="left"  width="300px" ></a>
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705158.png"  width="300px" >
 
 **Sample code (XML):**
 ``` xml
@@ -330,7 +330,7 @@ https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main
 
 ## Meter
 
-<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705141.png" align="left"  width="300px" ></a>
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705141.png"  width="300px" >
 
 **Sample code (XML):**
 ``` xml
