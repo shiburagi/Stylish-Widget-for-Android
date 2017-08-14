@@ -144,7 +144,7 @@ android:text="@string/radiobuttonexample"/>
 
 ## Button
 
-<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704613.png" align="left"  width="300px" ></a>
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704613.png" align="left"  width="300px" >
 <a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704667.png"  width="300px" ></a>
 
 ``` xml
