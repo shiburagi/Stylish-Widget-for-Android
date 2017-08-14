@@ -17,7 +17,6 @@ I will keep improve this library until it stable and useful.
  * set custom font for almost all view.
  * Message Box
  * Progress Bar
- * Indicator
 
 Android 7.0+ support
 
