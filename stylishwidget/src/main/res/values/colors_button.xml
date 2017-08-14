@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorWarning">#f0ad4e</color>
-    <color name="colorPrimary">#337ab7</color>
-    <color name="colorDanger">#d9534f</color>
-    <color name="colorInfo">#5bc0de</color>
-    <color name="colorSuccess">#5cb85c</color>
-    <color name="colorDefault">#e6e6e6</color>
-    <color name="colorAccent">#AFB42B</color>
+    <color name="colorWarning">#ffc107</color>
+    <color name="colorPrimary">#007bff</color>
+    <color name="colorDanger">#dc3545</color>
+    <color name="colorInfo">#17a2b8</color>
+    <color name="colorSuccess">#28a745</color>
+    <color name="colorDefault">@color/colorLight</color>
+    <color name="colorLight">#f8f9fa</color>
+    <color name="colorDark">#343a40</color>
+    <color name="colorAccent">#868e96</color>
     <color name="buttonPressOverlay">#10000000</color>
     <color name="buttonDisableOverlay">#99ffffff</color>
 </resources>

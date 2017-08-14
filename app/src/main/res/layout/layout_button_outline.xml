@@ -2,7 +2,8 @@
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue_50"
     android:orientation="vertical">
 
     <LinearLayout
@@ -30,12 +31,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Default Android" />
-
-        <com.app.infideap.stylishwidget.view.AButton
-            style="@style/Button.Default.Outline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Default" />
 
         <com.app.infideap.stylishwidget.view.AButton
             style="@style/Button.Primary.Outline"
@@ -74,6 +69,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Danger" />
+
+        <com.app.infideap.stylishwidget.view.AButton
+            style="@style/Button.Light.Outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light" />
+
+        <com.app.infideap.stylishwidget.view.AButton
+            style="@style/Button.Dark.Outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark" />
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

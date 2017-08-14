@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/layerlist_button_dark_fill">
+
+
+    </item>
+    <item android:state_enabled="false" android:drawable="@drawable/layerlist_button_dark_fill_disable">
+
+
+    </item>
+    <item  android:state_pressed="true" android:state_enabled="true">
+        <layer-list>
+            <item  android:state_pressed="true">
+                <layer-list>
+                    <item android:bottom="0px" android:left="0px" android:right="0px" android:top="0px">
+                        <shape android:shape="rectangle">
+                            <solid android:color="@color/colorDark" />
+                        </shape>
+                    </item>
+                </layer-list>
+
+            </item>
+            <item android:bottom="0px" android:left="0px" android:right="0px" android:top="0px">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/buttonPressOverlay" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+</selector>

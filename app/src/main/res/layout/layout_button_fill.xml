@@ -2,6 +2,7 @@
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/colorBlue_50"
     android:orientation="vertical">
 
     <LinearLayout
@@ -23,12 +24,6 @@
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
-
-        <com.app.infideap.stylishwidget.view.AButton
-            style="@style/Button.Default.Fill"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Default" />
 
         <com.app.infideap.stylishwidget.view.AButton
             style="@style/Button.Primary.Fill"
@@ -69,6 +64,18 @@
             android:layout_height="wrap_content"
             android:text="Danger" />
 
+        <com.app.infideap.stylishwidget.view.AButton
+            style="@style/Button.Light.Fill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light" />
+
+        <com.app.infideap.stylishwidget.view.AButton
+            style="@style/Button.Dark.Fill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark" />
+
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
@@ -83,13 +90,6 @@
         <android.support.v4.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
-
-        <com.app.infideap.stylishwidget.view.AButton
-            style="@style/Button.Default.Fill"
-            android:layout_width="match_parent"
-            android:enabled="false"
-            android:layout_height="wrap_content"
-            android:text="Default" />
 
         <com.app.infideap.stylishwidget.view.AButton
             style="@style/Button.Primary.Fill"
@@ -135,6 +135,18 @@
             android:layout_height="wrap_content"
             android:text="Danger" />
 
+        <com.app.infideap.stylishwidget.view.AButton
+            style="@style/Button.Light.Fill"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:text="Light" />
 
+        <com.app.infideap.stylishwidget.view.AButton
+            style="@style/Button.Dark.Fill"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:text="dark" />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
