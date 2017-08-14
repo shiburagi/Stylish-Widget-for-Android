@@ -100,7 +100,7 @@ Stylish.getInstance().setFontBoldItalic(
 
 ## Widget
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705147.png)
+<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705147.png" align="left"  width="300px" ></a>
 
 to **use the widget**, is **same** like using **android widget**
 
@@ -144,8 +144,8 @@ android:text="@string/radiobuttonexample"/>
 
 ## Button
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704613.png)
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704667.png)
+<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704613.png" align="left"  width="300px" ></a>
+<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704667.png" align="left"  width="300px" ></a>
 
 ``` xml
 <com.app.infideap.stylishwidget.view.AButton
@@ -159,7 +159,7 @@ android:text="Default" />
 
 ## Message Box
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705154.png)
+<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705154.png" align="left"  width="300px" ></a>
 
 ``` xml
 <com.app.infideap.stylishwidget.view.MessageBox
@@ -216,7 +216,7 @@ however, only **one action** can be use for **a MessageBox**
 
 ## Progress Bar
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705158.png)
+<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705158.png" align="left"  width="300px" ></a>
 
 **Sample code (XML):**
 ``` xml
@@ -330,7 +330,7 @@ https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main
 
 ## Meter
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705141.png)
+<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705141.png" align="left"  width="300px" ></a>
 
 **Sample code (XML):**
 ``` xml
