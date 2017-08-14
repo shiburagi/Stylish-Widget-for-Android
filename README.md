@@ -100,7 +100,7 @@ Stylish.getInstance().setFontBoldItalic(
 
 ## Widget
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211518.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705147.png)
 
 to **use the widget**, is **same** like using **android widget**
 
@@ -144,7 +144,8 @@ android:text="@string/radiobuttonexample"/>
 
 ## Button
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211544.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704613.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704667.png)
 
 ``` xml
 <com.app.infideap.stylishwidget.view.AButton
@@ -158,7 +159,7 @@ android:text="Default" />
 
 ## Message Box
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211608.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705154.png)
 
 ``` xml
 <com.app.infideap.stylishwidget.view.MessageBox
@@ -215,7 +216,7 @@ however, only **one action** can be use for **a MessageBox**
 
 ## Progress Bar
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211638.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705158.png)
 
 **Sample code (XML):**
 ``` xml
@@ -329,7 +330,7 @@ https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main
 
 ## Meter
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2017-05-05-002206.png)
+![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705141.png)
 
 **Sample code (XML):**
 ``` xml
