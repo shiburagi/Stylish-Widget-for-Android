@@ -8,6 +8,7 @@ I use it in my previous and current android project and may got an issue and err
 I will keep improve this library until it stable and useful.
 
 ## New update
+ * Bootstrap 4 color scheme
  * Add Field for Custom Bold Italic Font
  * Meter added
  * custom declare-styleable prefix added
