@@ -3,7 +3,7 @@
     <item  android:state_focused="false">
         <layer-list>
 
-            <item android:bottom="5px" android:left="0px" android:right="0px" android:top="5px">
+            <item android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp">
                 <shape android:shape="rectangle">
                     <stroke android:color="@color/colorEditTextDefault" android:width="2dp"/>
                     <corners android:radius="2px" />
@@ -13,10 +13,10 @@
     </item>
     <item android:state_focused="true">
         <layer-list>
-            <item android:bottom="5px" android:left="0px" android:right="0px" android:top="5px">
+            <item android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp">
                 <shape android:shape="rectangle">
                     <stroke android:color="@color/colorEditTextFocus" android:width="2dp"/>
-                    <corners android:radius="5px" />
+                    <corners android:radius="4dp" />
                 </shape>
             </item>
         </layer-list>

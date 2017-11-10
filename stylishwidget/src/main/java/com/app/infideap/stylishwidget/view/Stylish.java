@@ -65,7 +65,7 @@ public class Stylish {
         return instance;
     }
 
-    Typeface getTypeface(Context context, String font, int style) {
+    public Typeface getTypeface(Context context, String font, int style) {
 
         Typeface typeface;
         if (!Stylish.TYPEFACE.containsKey(font)) {

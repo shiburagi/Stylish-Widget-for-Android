@@ -9,23 +9,106 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin">
+            android:orientation="vertical">
 
 
             <com.app.infideap.stylishwidget.view.ATextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/widgetsample"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexample"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexamplebold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textStyle="bold" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexamplebold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexampleitalic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="italic" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexamplebolditalic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="italic|bold" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:id="@+id/textView_increment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexampleincrement"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <com.app.infideap.stylishwidget.view.ATextView
+                android:id="@+id/textView_decrement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textviewexampledecrement"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
 
 
             <android.support.v4.widget.Space
@@ -87,9 +170,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin">
+            android:orientation="vertical">
 
 
             <android.support.v4.widget.Space
@@ -118,58 +199,6 @@
             android:orientation="vertical"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin">
-
-
-            <com.app.infideap.stylishwidget.view.ATextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="@string/textviewexample"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="10dp" />
-
-            <com.app.infideap.stylishwidget.view.ATextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="@string/textviewexamplebold"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textStyle="bold" />
-
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="10dp" />
-
-            <com.app.infideap.stylishwidget.view.ATextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="@string/textviewexampleitalic"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textStyle="italic" />
-
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="10dp" />
-
-            <com.app.infideap.stylishwidget.view.ATextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="@string/textviewexamplebolditalic"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textStyle="italic|bold" />
-
-            <android.support.v4.widget.Space
-                android:layout_width="wrap_content"
-                android:layout_height="10dp" />
 
             <com.app.infideap.stylishwidget.view.ACheckBox
                 android:layout_width="wrap_content"

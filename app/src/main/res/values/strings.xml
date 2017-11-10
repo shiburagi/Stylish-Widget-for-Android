@@ -50,4 +50,6 @@
     <string name="fillbuttonsampledisable">Fill Button Sample (Disable)</string>
     <string name="fillbutton">Fill Button</string>
     <string name="plainbuttonsampledisable">Plain Button (Disable)</string>
+    <string name="textviewexampleincrement">TextView Example (Increment)</string>
+    <string name="textviewexampledecrement">TextView Example (Decrement)</string>
 </resources>

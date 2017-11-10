@@ -1,10 +1,14 @@
 package com.app.infideap.mystylishexample;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.app.infideap.stylishwidget.util.TextViewUtils;
 
 
 /**
@@ -13,6 +17,11 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class WidgetFragment extends Fragment {
+
+    private TextView incrementTextView;
+    private TextView decrementTextView;
+    private Thread incrementThread;
+    private Thread decrementTread;
 
     public WidgetFragment() {
         // Required empty public constructor
@@ -36,4 +45,38 @@ public class WidgetFragment extends Fragment {
         return inflater.inflate(R.layout.layout_widget, container, false);
     }
 
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        incrementTextView = (TextView) view.findViewById(R.id.textView_increment);
+        decrementTextView = (TextView) view.findViewById(R.id.textView_decrement);
+
+        startCounter();
+
+    }
+
+    private void startCounter() {
+
+        if (incrementThread != null) {
+            incrementThread.interrupt();
+        }
+        if (decrementTread != null) {
+            decrementTread.interrupt();
+        }
+
+        TextViewUtils utils = TextViewUtils.getInstance();
+        //Increment
+        incrementThread = utils.printIncrement(incrementTextView, "$%,d", 132, 500);
+        //Decrement
+        decrementTread = utils.printIncrement(decrementTextView, "%,dpt", 132, 0, 500);
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser && incrementTextView != null && decrementTextView != null) {
+            startCounter();
+        }
+    }
 }
