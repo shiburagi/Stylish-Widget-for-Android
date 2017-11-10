@@ -1,6 +1,7 @@
 # StylishWidget
 
 [ ![Download](https://api.bintray.com/packages/infideap2/Stylish-Widget/Stylish-Widget/images/download.svg) ](https://bintray.com/infideap2/Stylish-Widget/Stylish-Widget/_latestVersion)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Stylish%20Widget-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6338)
 
 **StylishWidget** is a library for an **Android Application project** to make the **UI more beautiful** and allow to use **third party font**.
 This library also contain few view that created by me and,
@@ -8,6 +9,7 @@ I use it in my previous and current android project and may got an issue and err
 I will keep improve this library until it stable and useful.
 
 ## New update
+ * Bootstrap 4 color scheme
  * Add Field for Custom Bold Italic Font
  * Meter added
  * custom declare-styleable prefix added
@@ -16,7 +18,6 @@ I will keep improve this library until it stable and useful.
  * set custom font for almost all view.
  * Message Box
  * Progress Bar
- * Indicator
 
 Android 7.0+ support
 
@@ -39,14 +40,14 @@ a dependency:
 <dependency>
   <groupId>com.app.infideap.stylishwidget</groupId>
   <artifactId>stylish-widget</artifactId>
-  <version>1.1.2</version>
+  <version>1.3.8</version>
   <type>pom</type>
 </dependency>
 ```
 #### Gradle
 ```groovy
 dependencies {
-   compile 'com.app.infideap.stylishwidget:stylish-widget:1.1.2'
+   compile 'com.app.infideap.stylishwidget:stylish-widget:1.3.8'
 }
 ```
 
@@ -100,7 +101,7 @@ Stylish.getInstance().setFontBoldItalic(
 
 ## Widget
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211518.png)
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705147.png" width="300px">
 
 to **use the widget**, is **same** like using **android widget**
 
@@ -144,7 +145,8 @@ android:text="@string/radiobuttonexample"/>
 
 ## Button
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211544.png)
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704613.png" align="left"  width="300px" >
+<a href="url"><img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502704667.png"  width="300px" ></a>
 
 ``` xml
 <com.app.infideap.stylishwidget.view.AButton
@@ -158,7 +160,7 @@ android:text="Default" />
 
 ## Message Box
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211608.png)
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705154.png" width="300px" >
 
 ``` xml
 <com.app.infideap.stylishwidget.view.MessageBox
@@ -215,7 +217,7 @@ however, only **one action** can be use for **a MessageBox**
 
 ## Progress Bar
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2016-07-19-211638.png)
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705158.png"  width="300px" >
 
 **Sample code (XML):**
 ``` xml
@@ -329,7 +331,7 @@ https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main
 
 ## Meter
 
-![Screenshot](https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/device-2017-05-05-002206.png)
+<img src="https://raw.githubusercontent.com/shiburagi/Stylish-Widget-for-Android/master/Screenshot_1502705141.png"  width="300px" >
 
 **Sample code (XML):**
 ``` xml
