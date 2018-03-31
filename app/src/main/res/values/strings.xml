@@ -52,4 +52,8 @@
     <string name="plainbuttonsampledisable">Plain Button (Disable)</string>
     <string name="textviewexampleincrement">TextView Example (Increment)</string>
     <string name="textviewexampledecrement">TextView Example (Decrement)</string>
+
+    <string name="editextdateexample">EditText(Date) Example</string>
+    <string name="editexttimeexample">EditText(Time) Example</string>
+    <string name="editextdatetimeexample">EditText(DateTime) Example</string>
 </resources>
