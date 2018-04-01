@@ -50,6 +50,7 @@ dependencies {
    compile 'com.app.infideap.stylishwidget:stylish-widget:1.4.1-alpha'
 }
 ```
+<hr/>
 
 ### Stable Version
 #### Maven
