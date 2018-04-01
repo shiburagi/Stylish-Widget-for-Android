@@ -35,6 +35,23 @@ folder of your application. You can download the latest version from the
 If you are a Maven user you can easily include the library by specifying it as
 a dependency:
 
+### Latest Version
+``` xml
+<dependency>
+  <groupId>com.app.infideap.stylishwidget</groupId>
+  <artifactId>stylish-widget</artifactId>
+  <version>1.4.1-alpha</version>
+  <type>pom</type>
+</dependency>
+```
+#### Gradle
+```groovy
+dependencies {
+   compile 'com.app.infideap.stylishwidget:stylish-widget:1.4.1-alpha'
+}
+```
+
+### Stable Version
 #### Maven
 ``` xml
 <dependency>
@@ -112,6 +129,17 @@ android:layout_width="match_parent"
 android:layout_height="wrap_content"
 android:hint="@string/editextexample" />
 ```
+#### Latest Version (1.4.1-alpha)
+Date/Time input type will display Date Picker Dialog on click.
+**EditText**
+``` xml
+<com.app.infideap.stylishwidget.view.AEditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="datetime"
+android:hint="@string/editextexample" />
+```
+
 
 **TextView**
 ``` xml
