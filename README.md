@@ -13,6 +13,7 @@ I will keep improve this library until it stable and useful.
  * Add Field for Custom Bold Italic Font
  * Meter added
  * custom declare-styleable prefix added
+ * Show picker dialog for date/time input type
 
 ## Features
  * set custom font for almost all view.
