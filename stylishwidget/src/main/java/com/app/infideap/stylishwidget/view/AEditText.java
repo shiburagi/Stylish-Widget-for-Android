@@ -29,65 +29,12 @@ import java.util.Locale;
 public class AEditText extends AppCompatEditText {
     private Calendar calendar;
     private boolean is24Hours;
+    private DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+    private DateFormat timeFormat = new SimpleDateFormat("hh:mm a", Locale.getDefault());
+    private DatePickerDialog datePicker;
+    private TimePickerDialog timePicker;
 
 
-
-    private PickerDialog datePickerDialog = new PickerDialog() {
-        private DatePickerDialog datePicker;
-        @Override
-        public void createDialog(final boolean isDateTime) {
-            datePicker = new DatePickerDialog(
-                    getContext(),
-                    new DatePickerDialog.OnDateSetListener() {
-                        @Override
-                        public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                            calendar.set(year, month, day);
-                            if (isDateTime)
-                                timePickerDialog.showDialog();
-                            else
-                                displayDate();
-                        }
-                    },
-                    calendar.get(Calendar.YEAR),
-                    calendar.get(Calendar.MONTH),
-                    calendar.get(Calendar.DAY_OF_MONTH)
-            );
-        }
-
-        @Override
-        public void showDialog() {
-            datePicker.show();
-        }
-    };
-
-    private PickerDialog timePickerDialog = new PickerDialog() {
-        private TimePickerDialog timePicker;
-        @Override
-        public void createDialog(final boolean isDateTime) {
-            timePicker = new TimePickerDialog(
-                    getContext(),
-                    new TimePickerDialog.OnTimeSetListener() {
-                        @Override
-                        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                            calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
-                            calendar.set(Calendar.MINUTE, minute);
-                            if (isDateTime)
-                                displayDateTime();
-                            else
-                                displayTime();
-                        }
-                    },
-                    calendar.get(Calendar.HOUR_OF_DAY),
-                    calendar.get(Calendar.MINUTE),
-                    is24Hours
-            );
-        }
-
-        @Override
-        public void showDialog() {
-            timePicker.show();
-        }
-    };
 
     public AEditText(Context context) {
         super(context);
@@ -163,13 +110,13 @@ public class AEditText extends AppCompatEditText {
     private void setupDateTimePicker() {
         calendar = Calendar.getInstance();
         disableInput();
-        datePickerDialog.createDialog(false);
-        timePickerDialog.createDialog(false);
+        createDatePicker(true);
+        createTimePicker(true);
         this.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setError(null);
-                datePickerDialog.showDialog();
+                showDatePicker();
                 hideKeyboard(view);
             }
         });
@@ -182,15 +129,17 @@ public class AEditText extends AppCompatEditText {
     }
 
 
+
+
     private void setupDatePicker() {
         calendar = Calendar.getInstance();
         disableInput();
-        datePickerDialog.createDialog(false);
+        createDatePicker(false);
         this.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setError(null);
-                datePickerDialog.showDialog();
+                showDatePicker();
                 hideKeyboard(view);
             }
         });
@@ -206,12 +155,12 @@ public class AEditText extends AppCompatEditText {
     private void setupTimePicker() {
         calendar = Calendar.getInstance();
         disableInput();
-        timePickerDialog.createDialog(false);
+        createTimePicker(false);
         this.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setError(null);
-                timePickerDialog.showDialog();
+                showTimePicker();
                 hideKeyboard(view);
             }
         });
@@ -223,6 +172,48 @@ public class AEditText extends AppCompatEditText {
         });
     }
 
+    private void createDatePicker(final boolean isDateTime) {
+        datePicker = new DatePickerDialog(
+                getContext(),
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                        calendar.set(year, month, day);
+                        if (isDateTime)
+                            showTimePicker();
+                        else
+                            displayDate();
+                    }
+                },
+                calendar.get(Calendar.YEAR),
+                calendar.get(Calendar.MONTH),
+                calendar.get(Calendar.DAY_OF_MONTH)
+        );
+    }
+
+
+
+    public void createTimePicker(final boolean isDateTimePicker) {
+        timePicker = new TimePickerDialog(
+                getContext(),
+                new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+
+                        calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
+                        calendar.set(Calendar.MINUTE, minute);
+
+                        if (isDateTimePicker)
+                            displayDateTime();
+                        else
+                            displayTime();
+                    }
+                },
+                calendar.get(Calendar.HOUR_OF_DAY),
+                calendar.get(Calendar.MINUTE),
+                is24Hours
+        );
+    }
 
     public void hideKeyboard(View view) {
         if (view != null) {
@@ -242,7 +233,27 @@ public class AEditText extends AppCompatEditText {
         }
     }
 
+    private void showDatePicker() {
+        datePicker.show();
+    }
 
+    private void showTimePicker() {
+        timePicker.show();
+    }
+
+    @SuppressLint("SetTextI18n")
+    private void displayDateTime() {
+        this.setText(dateFormat.format(calendar.getTime()) + " " + timeFormat.format(calendar.getTime()));
+    }
+
+    private void displayDate() {
+        this.setText(dateFormat.format(calendar.getTime()));
+    }
+
+
+    private void displayTime() {
+        this.setText(timeFormat.format(calendar.getTime()));
+    }
 
 
     private void disableInput() {
@@ -253,34 +264,13 @@ public class AEditText extends AppCompatEditText {
         return calendar;
     }
 
-
-
-    public abstract class PickerDialog{
-
-        private DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
-        private DateFormat timeFormat = new SimpleDateFormat("hh:mm a", Locale.getDefault());
-        @SuppressLint("SetTextI18n")
-        void displayDateTime() {
-            setText(dateFormat.format(calendar.getTime()) + " " + timeFormat.format(calendar.getTime()));
-        }
-
-        void displayDate() {
-            setText(dateFormat.format(calendar.getTime()));
-        }
-
-
-        void displayTime() {
-            setText(timeFormat.format(calendar.getTime()));
-        }
-        public void setDateFormat(DateFormat dateFormat) {
-            this.dateFormat = dateFormat;
-        }
-
-        public void setTimeFormat(DateFormat timeFormat) {
-            this.timeFormat = timeFormat;
-        }
-
-        public abstract void createDialog(boolean isDateTime);
-        public abstract void showDialog();
+    public void setDateFormat(DateFormat dateFormat) {
+        this.dateFormat = dateFormat;
     }
+
+    public void setTimeFormat(DateFormat timeFormat) {
+        this.timeFormat = timeFormat;
+    }
+
+
 }
