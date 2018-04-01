@@ -35,7 +35,8 @@ folder of your application. You can download the latest version from the
 If you are a Maven user you can easily include the library by specifying it as
 a dependency:
 
-### Latest Version
+### Latest Version (1.4.1-alpha)
+#### Maven
 ``` xml
 <dependency>
   <groupId>com.app.infideap.stylishwidget</groupId>
@@ -52,7 +53,7 @@ dependencies {
 ```
 <hr/>
 
-### Stable Version
+### Stable Version (1.3.9)
 #### Maven
 ``` xml
 <dependency>
