@@ -131,7 +131,7 @@ android:layout_height="wrap_content"
 android:hint="@string/editextexample" />
 ```
 #### Latest Version (1.4.1-alpha or above)
-EditText will **Date/Time input type** will display **Date Picker Dialog** on click.
+EditText will **Date/Time input type** will display **Picker Dialog** on click.
 
 ``` xml
 <com.app.infideap.stylishwidget.view.AEditText
