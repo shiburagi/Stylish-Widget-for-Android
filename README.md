@@ -42,14 +42,14 @@ a dependency:
 <dependency>
   <groupId>com.app.infideap.stylishwidget</groupId>
   <artifactId>stylish-widget</artifactId>
-  <version>1.4.1-alpha</version>
+  <version>1.4.2-alpha</version>
   <type>pom</type>
 </dependency>
 ```
 #### Gradle
 ```groovy
 dependencies {
-   compile 'com.app.infideap.stylishwidget:stylish-widget:1.4.1-alpha'
+   compile 'com.app.infideap.stylishwidget:stylish-widget:1.4.2-alpha'
 }
 ```
 <hr/>
