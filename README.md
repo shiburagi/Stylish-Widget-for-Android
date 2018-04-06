@@ -36,7 +36,7 @@ folder of your application. You can download the latest version from the
 If you are a Maven user you can easily include the library by specifying it as
 a dependency:
 
-### Latest Version (1.4.1-alpha)
+### Latest Version (1.4.2-alpha)
 #### Maven
 ``` xml
 <dependency>
