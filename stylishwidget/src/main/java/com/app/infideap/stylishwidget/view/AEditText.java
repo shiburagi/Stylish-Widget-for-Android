@@ -15,8 +15,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
-import com.app.infideap.stylishwidget.Log;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -90,7 +88,6 @@ public class AEditText extends AppCompatEditText {
 
     @Override
     public void setRawInputType(int type) {
-        Log.e(this.getClass().getSimpleName(), "Type : "+type);
         switch (type) {
             case InputType.TYPE_DATETIME_VARIATION_TIME|InputType.TYPE_CLASS_DATETIME:
                 setupTimePicker();

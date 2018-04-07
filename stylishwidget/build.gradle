@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 ext{
     PUBLISH_GROUP_ID= 'com.app.infideap.stylishwidget'
     PUBLISH_ARTIFACT_ID= 'stylish-widget'
-    PUBLISH_VERSION= '1.4.1-alpha'
+    PUBLISH_VERSION= '1.4.2-alpha'
 }
 android {
     compileSdkVersion 25
@@ -32,8 +32,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.4.0'
     compile 'com.android.support:design:25.4.0'
     compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.philliphsu:bottomsheetpickers:2.4.1'
-
 }
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/' +
         'master/android-release-aar.gradle'

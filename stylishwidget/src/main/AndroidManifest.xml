@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.app.infideap.stylishwidget">
 
-    <uses-sdk tools:overrideLibrary="com.philliphsu.bottomsheetpickers"/>
     <application android:allowBackup="true" android:label="@string/app_name"
         android:supportsRtl="true">
 

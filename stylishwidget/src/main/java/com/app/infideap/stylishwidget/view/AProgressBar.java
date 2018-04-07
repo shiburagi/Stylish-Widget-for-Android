@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.ViewGroup;
@@ -180,6 +181,7 @@ public class AProgressBar extends LinearLayout {
             textView.setPadding(padding, 0, padding, 0);
             textView.setGravity(Gravity.CENTER);
             textView.setTextColor(Color.WHITE);
+            textView.setEllipsize(TextUtils.TruncateAt.END);
             LinearLayout linearLayout = new LinearLayout(getContext());
             linearLayout.setId(100+i);
             linearLayout.setGravity(Gravity.CENTER);
