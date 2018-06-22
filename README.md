@@ -28,6 +28,10 @@ Android 7.0+ support
  * **JAR** : (https://github.com/shiburagi/Stylish-Widget-for-Android/tree/master/stylishwidget/jar)
  * **APK** : (https://drive.google.com/file/d/0Bw_drx3o3plaZVptWWNxWUdfSmM/view?usp=sharing) 
 
+---
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D9JKYQL8452AL)
+
 ## Including In Your Project
 This library is presented as a `.jar` file which you can include in the `libs/`
 folder of your application. You can download the latest version from the
@@ -399,10 +403,6 @@ meter.setMaxValue(100);
 For more **Meter**, please refer on the link below :
 
 https://github.com/shiburagi/Stylish-Widget-for-Android/blob/master/app/src/main/java/com/app/infideap/mystylishexample/MeterFragment.java
-
-## Donation
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=27HXTQCZ5SE9C)
 
 ## Contact
 For any enquiries, please send an email to tr32010@gmail.com. 
