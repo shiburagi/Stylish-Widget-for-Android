@@ -72,7 +72,7 @@ dependencies {
 #### Gradle
 ```groovy
 dependencies {
-   compile 'com.app.infideap.stylishwidget:stylish-widget:1.3.9'
+   implementation 'com.app.infideap.stylishwidget:stylish-widget:1.3.9'
 }
 ```
 
