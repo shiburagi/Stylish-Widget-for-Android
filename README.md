@@ -54,7 +54,7 @@ a dependency:
 #### Gradle
 ```groovy
 dependencies {
-   compile 'com.app.infideap.stylishwidget:stylish-widget:1.4.2-alpha'
+   implementation 'com.app.infideap.stylishwidget:stylish-widget:1.4.2-alpha'
 }
 ```
 <hr/>
