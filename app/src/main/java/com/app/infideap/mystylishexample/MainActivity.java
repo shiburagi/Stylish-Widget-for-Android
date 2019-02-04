@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViewPager() {
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager = findViewById(R.id.viewPager);
         final Fragment[] fragments = new Fragment[]{
                 MeterFragment.newInstance(),
                 WidgetFragment.newInstance(),

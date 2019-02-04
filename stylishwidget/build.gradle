@@ -2,16 +2,15 @@ apply plugin: 'com.android.library'
 ext{
     PUBLISH_GROUP_ID= 'com.app.infideap.stylishwidget'
     PUBLISH_ARTIFACT_ID= 'stylish-widget'
-    PUBLISH_VERSION= '1.4.1-alpha'
+    PUBLISH_VERSION= '1.5.1'
 }
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.3'
+    compileSdkVersion 28
 
     defaultConfig {
 
         minSdkVersion 9
-        targetSdkVersion 25
+        targetSdkVersion 28
     }
     buildTypes {
         release {
@@ -27,12 +26,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.4.0'
-    compile 'com.android.support:design:25.4.0'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'com.philliphsu:bottomsheetpickers:2.4.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.philliphsu:bottomsheetpickers:2.4.1'
 
 }
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/' +

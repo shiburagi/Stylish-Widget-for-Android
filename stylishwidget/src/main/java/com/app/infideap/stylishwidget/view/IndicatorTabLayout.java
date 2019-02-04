@@ -38,8 +38,9 @@ public class IndicatorTabLayout extends TabLayout {
         super.onDraw(canvas);
     }
 
+
     @Override
-    public void addOnTabSelectedListener(@NonNull final OnTabSelectedListener listener) {
+    public void addOnTabSelectedListener(@NonNull BaseOnTabSelectedListener listener) {
         super.addOnTabSelectedListener(listener);
     }
 
