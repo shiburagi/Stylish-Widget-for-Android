@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Build;
-import android.support.design.widget.TextInputEditText;
+
+import com.app.infideap.stylishwidget.R;
+import com.google.android.material.textfield.TextInputEditText;
 import android.util.AttributeSet;
 
 
@@ -33,8 +35,8 @@ public class ATextInputEditText extends TextInputEditText {
     private void setCustomTypeface(Context context, AttributeSet attrs) {
         if(isInEditMode())
             return;
-        TypedArray a = context.obtainStyledAttributes(attrs, android.support.v7.appcompat.R.styleable.TextAppearance);
-        int style = a.getInt(android.support.v7.appcompat.R.styleable.TextAppearance_android_textStyle, Typeface.NORMAL);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TextAppearance);
+        int style = a.getInt(R.styleable.TextAppearance_android_textStyle, Typeface.NORMAL);
 
         setTextStyle(style);
         a.recycle();

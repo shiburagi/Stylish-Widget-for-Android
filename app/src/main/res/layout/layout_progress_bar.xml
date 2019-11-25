@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textStyle="bold" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -39,7 +39,7 @@
             app:sw_progressColor="@color/colorAccent"
             app:sw_progressValue="30" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -58,7 +58,7 @@
             app:sw_progressValue="30"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -80,7 +80,7 @@
             app:sw_radius="7dp"
             app:sw_withAnimation="true" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -98,7 +98,7 @@
             app:sw_progressBackground="#ccc"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -116,7 +116,7 @@
             app:sw_progressBackground="#ccc"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -135,7 +135,7 @@
             app:sw_progressTextStyle="bold"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -155,7 +155,7 @@
             app:sw_progressTextStyle="bold"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="30dp" />
 
@@ -164,7 +164,7 @@
             android:layout_height="1dp"
             android:background="@color/colorLine" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="30dp" />
 
@@ -183,7 +183,7 @@
             app:sw_progressColor="@color/colorAccent"
             app:sw_progressValue="30" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -203,7 +203,7 @@
             app:sw_progressValue="30"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -226,7 +226,7 @@
             app:sw_radius="7dp"
             app:sw_withAnimation="true" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -245,7 +245,7 @@
             app:sw_progressBackground="#ccc"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -264,7 +264,7 @@
             app:sw_progressBackground="#ccc"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -284,7 +284,7 @@
             app:sw_progressTextStyle="bold"
             app:sw_radius="7dp" />
 
-        <android.support.v4.widget.Space
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
@@ -305,4 +305,4 @@
             app:sw_progressTextStyle="bold"
             app:sw_radius="7dp" />
     </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+</androidx.core.widget.NestedScrollView>

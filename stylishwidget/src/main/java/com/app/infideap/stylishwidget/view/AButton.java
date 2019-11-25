@@ -3,8 +3,10 @@ package com.app.infideap.stylishwidget.view;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
-import android.support.v7.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatButton;
 import android.util.AttributeSet;
+
+import com.app.infideap.stylishwidget.R;
 
 
 /**
@@ -33,8 +35,8 @@ public class AButton extends AppCompatButton {
     private void setCustomTypeface(Context context, AttributeSet attrs) {
         if(isInEditMode())
             return;
-        TypedArray a = context.obtainStyledAttributes(attrs, android.support.v7.appcompat.R.styleable.TextAppearance);
-        int style = a.getInt(android.support.v7.appcompat.R.styleable.TextAppearance_android_textStyle, Typeface.BOLD);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TextAppearance);
+        int style = a.getInt(R.styleable.TextAppearance_android_textStyle, Typeface.BOLD);
 
         setTextStyle(style);
         a.recycle();
