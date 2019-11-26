@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
 
-        minSdkVersion 9
+        minSdkVersion 16
         targetSdkVersion 28
     }
     buildTypes {
@@ -28,9 +28,9 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support:gridlayout-v7:28.0.0'
-    implementation 'com.android.support:design:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.nineoldandroids:library:2.4.0'
     implementation 'com.philliphsu:bottomsheetpickers:2.4.1'
 

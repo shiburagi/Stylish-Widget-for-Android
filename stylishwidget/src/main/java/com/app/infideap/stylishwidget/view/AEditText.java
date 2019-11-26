@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Build;
-import android.support.v7.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.View;
@@ -16,6 +16,7 @@ import android.widget.DatePicker;
 import android.widget.TimePicker;
 
 import com.app.infideap.stylishwidget.Log;
+import com.app.infideap.stylishwidget.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -60,8 +61,8 @@ public class AEditText extends AppCompatEditText {
         is24Hours = android.text.format.DateFormat.is24HourFormat(getContext());
         if (isInEditMode())
             return;
-        TypedArray a = context.obtainStyledAttributes(attrs, android.support.v7.appcompat.R.styleable.TextAppearance);
-        int style = a.getInt(android.support.v7.appcompat.R.styleable.TextAppearance_android_textStyle, Typeface.NORMAL);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TextAppearance);
+        int style = a.getInt(R.styleable.TextAppearance_android_textStyle, Typeface.NORMAL);
 
         setTextStyle(style);
         a.recycle();
